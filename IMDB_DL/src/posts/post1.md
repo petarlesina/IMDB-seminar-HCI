@@ -1,6 +1,6 @@
 ---
-title: "Gatsby bootcamp"
-date: "sijecanj 2020"
+title: "Prva objava"
+date: "Sijecanj 2020"
 --- 
 
 OMG novi tekst OMG novi tekst OMG novi tekst

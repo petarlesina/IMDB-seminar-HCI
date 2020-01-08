@@ -1,6 +1,6 @@
 ---
-title: "react bootcamp"
-date: "rrr 2020"
+title: "Druga objava"
+date: "Veljaca 2020"
 --- 
 
 OMG nov777st OMG novnov777st MG novi tenov777st 
