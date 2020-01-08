@@ -6,7 +6,7 @@ import Layout from '../components/layout'
 
 const AlbumsPage = () => {
     return (
-       <Layout>
+        <Layout>
             <h1>albumi</h1>
         </Layout>
 
