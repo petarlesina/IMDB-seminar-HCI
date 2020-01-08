@@ -25,4 +25,6 @@
 
 .activeButton{
     color:#0066cc;
+    text-decoration: underline;
+    text-decoration-color: #0066cc;
 }
