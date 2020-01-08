@@ -1,24 +1,27 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import { Link } from "gatsby"
+import { Link, graphql, useStaticQuery } from 'gatsby'
 
 import Layout from '../components/layout'
+import blogStyles from './blog.module.scss'
 
 const BlogPage = () => {
-    // const data = useStaticQuery(graphql`
-    //     query {
-    //         allMarkdownRemark {
-    //             edges {
-    //                 node {
-    //                     frontmatter {
-    //                         title
-    //                         date
-    //                     }
-    //                 }
-    //             }
-    //         }
-    //     }
-    // `)
+    const data = useStaticQuery(graphql`
+         query {
+             allMarkdownRemark {
+                 edges {
+                     node {
+                         frontmatter {
+                             title
+                             date
+                         }
+                         fields {
+                             slug
+                         }
+                     }
+                 }
+             }
+         }
+     `)
 
     
 
@@ -26,16 +29,18 @@ const BlogPage = () => {
         <div>
             <Layout>
             <h1>blog</h1>
-            <ol>
+            <ol className={blogStyles.posts}>
 
-                {/* {data.allMarkdownRemark.edges.map((edge) =>{
+                {data.allMarkdownRemark.edges.map((edge) =>{
                     return (
-                        <li>
+                        <li className={blogStyles.singlePost}>
+                            <Link to={`/blog/${edge.node.fields.slug}`}>
                             <h3>{edge.node.frontmatter.title}</h3>
                             <p>{edge.node.frontmatter.date}</p>
+                            </Link>
                         </li>
                     )
-                })} */}
+                })}
 
             </ol>
             </Layout>
@@ -44,3 +49,4 @@ const BlogPage = () => {
 
 }
 
+export default BlogPage

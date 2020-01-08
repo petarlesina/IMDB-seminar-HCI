@@ -39,7 +39,21 @@ module.exports = {
       },
     },
     `gatsby-transformer-sharp`,
-    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+              `gatsby-remark-relative-images`,
+              {
+                resolve: `gatsby-remark-images`,
+                options: {
+                   maxWidth: 600,
+                   linkImagesToOriginal: false
+                }
+              }
+            ]
+      }
+    },
     `gatsby-plugin-sass`,
     `gatsby-plugin-sharp`,
     {
@@ -53,6 +67,7 @@ module.exports = {
         display: `minimal-ui`,
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
+      
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
