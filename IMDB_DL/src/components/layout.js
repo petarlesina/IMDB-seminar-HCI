@@ -5,15 +5,13 @@ import Footer from './footer'
 import '../styles/index.scss'
 import layoutStyles from './layout.module.scss'
 
-const Layout = (item) => {
+const Layout = props => {
     return (
-        <div className = {layoutStyles.range}>
-          <div className = {layoutStyles.content}>
+        <div className = {layoutStyles.layout}>
             <Header />
-            {item.children}
+            {props.children}
+            <Footer />
           </div>
-          <Footer />
-        </div>
 
     )
 

@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `IMDB`,
     description: `Projekt za HCI 2019/2020`,
-    author: `Delonga Bruno i Lešina Petar`,
+    author: `Lešina Petar i Delonga Bruno`,
 
     menuItems : [
       {

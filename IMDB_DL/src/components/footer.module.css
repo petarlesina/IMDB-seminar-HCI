@@ -1,0 +1,136 @@
+.footer {
+    background-color: #468847;
+    padding: 3em 5em 2em 5em;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr 1fr;
+    grid-gap: 2em;
+    justify-content: space-between;
+    padding-bottom: 4em;
+  }
+  
+  .findUs,
+  .links,
+  .contact {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .iconsContainer {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .img {
+    width: 100%;
+    max-width: 40px;
+    margin-right: 1em;
+    transition: all 1s ease;
+  }
+  
+  .img:hover {
+    transform: scale(1.1);
+    z-index: 1;
+  }
+  
+  .title {
+    color: var(--secondary-color);
+    margin-bottom: 1em;
+  }
+  
+  .link {
+    color: #abdef7;
+  }
+  
+  .link:hover {
+    color: var(--primary-color);
+    text-decoration: underline;
+  }
+  
+  .number,
+  .mail {
+    color: var(--secondary-color);
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  .number {
+    margin-bottom: 0.7em;
+  }
+  
+  .imgPhone,
+  .imgMail {
+    width: 100%;
+    max-width: 25px;
+    margin-right: 8px;
+    height: 25px;
+  }
+  
+  .mailP,
+  .numberP {
+    margin-bottom: 0;
+  }
+  
+  .copyright {
+    color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  
+  @media screen and (max-width: 768px) {
+    .footer {
+      margin-bottom: 53.38px;
+    }
+  
+    .findUs {
+      grid-area: find;
+    }
+  
+    .links {
+      grid-area: link;
+    }
+  
+    .contact {
+      grid-area: cont;
+    }
+  
+    .container {
+      display: grid;
+      grid-template-columns: auto;
+      grid-template-rows: auto;
+      grid-template-areas:
+        "find find find find"
+        "link  . cont cont";
+      padding-bottom: 2em;
+    }
+  }
+  
+  @media screen and (max-width: 550px) {
+    .links {
+      display: none;
+    }
+  
+    .contact {
+      display: none;
+    }
+  
+    .footer {
+      padding: 2em 3em;
+    }
+  
+    .container {
+      display: flex;
+      padding-bottom: 2em;
+      flex-direction: row;
+      justify-content: center;
+    }
+  
+    .title {
+      display: none;
+    }
+  }
+  
