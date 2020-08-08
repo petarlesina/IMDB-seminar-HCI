@@ -26,10 +26,10 @@ const Header = ({children}) => {
 
   return (
       <header className={headerStyles.header}>
-       <h1>
+       {/* <h1>
             <Link className={headerStyles.title} to="/">
             {data.site.siteMetadata.title} </Link>
-        </h1> 
+        </h1>  */}
         <div>
 			      <Navigation menuItems={menuItems} />
 			      {children}

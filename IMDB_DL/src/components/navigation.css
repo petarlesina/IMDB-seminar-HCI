@@ -1,10 +1,22 @@
 .navList{
+    position: fixed;
+    top:14px;
+    right:3px;
     display:flex;
     list-style-type: none;
     margin: 0;
     justify-content: flex-end;
+    /* background-color: #8080ff; */
     
 }
+
+.title {
+    color: red;
+    font-size: 3.7rem;
+    text-decoration: none;
+    text-align: center;
+}
+
 
 .item {
     /* margin: 7px; */
@@ -16,7 +28,7 @@
     color:#4dc3ff;
     text-decoration: none;
     font-size: 1.3rem;
-    margin-right: 1.5rem;
+    margin-right: 1.1rem;
 }
 
 .button:hover {
