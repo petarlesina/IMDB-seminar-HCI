@@ -3,3 +3,9 @@
     background-color: #8080ff;
 }
 
+@media only screen and (max-width: 670px) {
+    .header {
+        background-color: black;
+        padding: 1rem 0rem 0rem;
+    }
+  }

@@ -22,7 +22,7 @@ module.exports = {
         link: "/blog"
       },
       {
-        text: "Sign in",
+        text: "Login",
         link: "/signin"
       }
       

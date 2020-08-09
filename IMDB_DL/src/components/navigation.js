@@ -1,6 +1,7 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import "./navigation.css"
+import logo from "../images/logo.png"
 
 const Navigation = ({menuItems}) => {
 
@@ -17,12 +18,16 @@ const Navigation = ({menuItems}) => {
         }
     }
   `)
-
     return (
         <div>
-        <Link className = "title" to="/">
-            {data.site.siteMetadata.title} </Link>
+        
         <ul className = "navList">
+        <li className = "title" >
+                <Link  to="/">
+            {/* {data.site.siteMetadata.title} */}
+            <img className="logo" src={logo}></img> </Link> 
+        </li>
+            
         {menuItems.map(({ link, text}) => (
             <div className="test">
                 <li className = "item" key={text}>
@@ -31,6 +36,7 @@ const Navigation = ({menuItems}) => {
             </div>
             ))}
         </ul>
+
         </div>
     )
 }
