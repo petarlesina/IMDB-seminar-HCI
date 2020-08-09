@@ -1,3 +1,7 @@
+.title {
+    margin: 2rem 6rem;
+}
+
 .posts {
     list-style-type: none;
     margin: 0;
@@ -5,7 +9,7 @@
 }
 
 .singlePost{
-    margin: 1rem 0;
+    margin: 2rem 6rem;
 
     a {
         background-color: #ffcccc;
@@ -31,3 +35,9 @@
         font-style: italic;
     }
 }
+
+@media only screen and (max-width: 720px) {
+    .singlePost {
+        margin:1rem;
+    }
+  }
