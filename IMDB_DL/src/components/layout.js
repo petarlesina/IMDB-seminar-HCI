@@ -8,9 +8,15 @@ import layoutStyles from './layout.module.scss'
 const Layout = props => {
     return (
         <div className = {layoutStyles.layout}>
-            <Header />
-            {props.children}
-            <Footer />
+            
+            <div id="page-container">
+                <div id="content-warp">
+                <Header />
+                     {props.children}
+                <Footer />
+                </div>
+            </div>
+           
           </div>
 
     )

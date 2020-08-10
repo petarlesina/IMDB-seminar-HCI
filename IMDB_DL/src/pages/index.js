@@ -3,7 +3,6 @@ import { Link } from "gatsby"
 
 import Layout from '../components/layout'
 import '../styles/index.scss'
-import logo from "../images/logo.png"
 
 const IndexPage = () => {
       return (
@@ -27,7 +26,7 @@ const IndexPage = () => {
             <p>tekstteksttekstteksttekstteksttekstteksttekstteksttekstteksttekst</p>
             <p>tekstteksttekstteksttekstteksttekstteksttekstteksttekstteksttekst</p>
             <p>teksttekstteksttekstteksttekstteksttekstteksteksttekstteksttekstekstteksttekstteksteksttekstteksttekstekstteksttekstteksteksttekstteksttekstteksttekstteksttekst</p>
-            {/* <img src={logo}></img> */}
+            <p>000000000000</p>
           </Layout>          
       )
       }
