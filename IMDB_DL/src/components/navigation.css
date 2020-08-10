@@ -58,29 +58,48 @@
 
 
 @media only screen and (max-width: 720px) {
-    .title {
-        /* color: #8080ff;
-        font-size: 1.7rem;
-        margin-left: 10px;
-        background-color: green; */
+    .title {  
         display:none;
     }
     .navList{
-        /* background-color: white; */
-        position: relative;
-        /* right: 10px;
-        left: 10px; */
-        bottom:10px;
+        position: relative; 
+        left: 1.3rem;
+        bottom:15px;
         display:flex;
         justify-content: center;
-        margin-bottom: 12px;
-        margin-right: 3rem;
-        margin-left: 4rem;
+        margin: 12px 1.7rem 0 0.3rem;
     }
     .item{
         position: relative;
         top: 1px;
-        font-size: 1.7rem;
+        font-size: 14px;
         margin:0.1px;
+    }
+    .button{
+        font-size: 1.1rem;
+    }
+  }
+
+
+  @media only screen and (max-width: 340px) {
+    .title {  
+        display:none;
+    }
+    .navList{
+        position: relative; 
+        left: 1.3rem;
+        bottom:15px;
+        display:flex;
+        justify-content: center;
+        margin: 12px 1.7rem 0 0.3rem;
+    }
+    .item{
+        position: relative;
+        top: 1px;
+        font-size: 14px;
+        margin:0.1px;
+    }
+    .button{
+        font-size: 1rem;
     }
   }

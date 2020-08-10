@@ -27,6 +27,7 @@ const IndexPage = () => {
             <p>tekstteksttekstteksttekstteksttekstteksttekstteksttekstteksttekst</p>
             <p>teksttekstteksttekstteksttekstteksttekstteksteksttekstteksttekstekstteksttekstteksteksttekstteksttekstekstteksttekstteksteksttekstteksttekstteksttekstteksttekst</p>
             <p>000000000000</p>
+            <p>xxxxxxxxxxxxxxxx</p>
           </Layout>          
       )
       }
