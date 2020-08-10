@@ -68,17 +68,19 @@
     .navList{
         /* background-color: white; */
         position: relative;
-        right: 0;
+        /* right: 10px;
+        left: 10px; */
         bottom:10px;
-        left: 10px;
         display:flex;
         justify-content: center;
         margin-bottom: 12px;
+        margin-right: 3rem;
+        margin-left: 4rem;
     }
     .item{
         position: relative;
         top: 1px;
         font-size: 1.7rem;
-        margin:0.6px;
+        margin:0.1px;
     }
   }

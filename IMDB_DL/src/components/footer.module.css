@@ -10,7 +10,7 @@
     justify-content: space-between;
     padding-bottom: 4em;
   }
-  
+/*   
   .findUs,
   .links,
   .contact {
@@ -73,7 +73,7 @@
   .mailP,
   .numberP {
     margin-bottom: 0;
-  }
+  } */
   
   .copyright {
     color: #000000;
@@ -81,7 +81,7 @@
     margin-bottom: 0;
   }
   
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 720px) {
     .footer {
       margin-bottom: 0px;
     }
@@ -109,7 +109,7 @@
     }
   }
   
-  @media screen and (max-width: 550px) {
+  /* @media screen and (max-width: 550px) {
     .links {
       display: none;
     }
@@ -133,4 +133,4 @@
       display: none;
     }
   }
-  
+   */
