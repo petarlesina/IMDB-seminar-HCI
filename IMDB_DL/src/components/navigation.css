@@ -1,7 +1,5 @@
 .navList{
     position: relative;
-    /* top:14px;
-    right:3px; */
     display:flex;
     list-style-type: none;
     margin: 0 4.5rem;
