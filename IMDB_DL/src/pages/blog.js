@@ -1,5 +1,6 @@
 import React from 'react'
 import { Link, graphql, useStaticQuery } from 'gatsby'
+import SEO from "../components/seo"
 
 import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
@@ -28,6 +29,7 @@ const BlogPage = () => {
     return (
         <div>
             <Layout>
+            <SEO title="Blog" keywords="Blog" /> 
             <h1 className={blogStyles.title}>blog</h1>
             <ol className={blogStyles.posts}>
 

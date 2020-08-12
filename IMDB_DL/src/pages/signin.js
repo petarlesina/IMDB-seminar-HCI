@@ -1,12 +1,13 @@
 import React from 'react'
-
+import SEO from "../components/seo"
 import Layout from '../components/layout'
-import style from './signin.css'
+import  './signin.css'
 
 const SignInPage = () => {
     return (
         <div>
             <Layout>
+            <SEO title="Login" keywords="Login" /> 
             {/* <h1>prijava</h1> */}
             <form class="box" action="" method="post">
                 <h1>Login</h1>

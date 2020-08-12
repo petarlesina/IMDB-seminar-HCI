@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
     title: `IMDB`,
-    description: `Projekt za HCI 2019/2020`,
-    author: `Lešina Petar i Delonga Bruno`,
+    description: `Welcome to Internet Music Database website! Discover new music or rediscover old hits with one mouse click!`,
+    author: `Lešina Petar i NIKO VIŠE`,
 
     menuItems : [
       {
@@ -24,7 +24,8 @@ module.exports = {
       {
         text: "Login",
         link: "/signin"
-      }
+      },
+      
       
   ],
 

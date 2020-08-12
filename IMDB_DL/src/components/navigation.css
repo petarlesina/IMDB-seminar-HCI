@@ -15,7 +15,6 @@
     text-align: center;
     position: absolute;
     left: 30px;
-    
 }
 
 .logo {
@@ -38,24 +37,25 @@
     }
 
 .button {
-    color:#4dc3ff;
+    /* color:#4dc3ff; */
+    color:#df80ff;
     text-decoration: none;
     font-size: 1.3rem;
     margin-right: 1.1rem;
 }
 
 .button:hover {
-    color: #cc00ff;
+    color: #9900cc;
 }
 
 .activeButton{
-    color:#0066cc;
+    color:#4d0066;
     /* text-decoration: underline; */
     text-decoration-color: #0066cc;
 }
 
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 996px) {
     .title {  
         display:none;
     }
@@ -79,7 +79,7 @@
   }
 
 
-  @media only screen and (max-width: 340px) {
+  @media only screen and (max-width: 616px) {
     .title {  
         display:none;
     }
