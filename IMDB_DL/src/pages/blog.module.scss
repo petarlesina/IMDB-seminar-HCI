@@ -1,6 +1,15 @@
+
+
+.mainContainer{
+    width:88%;
+    margin: 70px auto;
+}
+
+
 .title {
     margin: 2rem 14rem;
 }
+
 
 .posts {
     list-style-type: none;
@@ -38,7 +47,7 @@
     }
 }
 
-@media only screen and (max-width: 996px) {
+@media only screen and (max-width: 1024px) {
     .title{
         margin: 3rem;
     }

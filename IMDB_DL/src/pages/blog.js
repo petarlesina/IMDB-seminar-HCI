@@ -29,7 +29,8 @@ const BlogPage = () => {
     return (
         <div>
             <Layout>
-            <SEO title="Blog" keywords="Blog" /> 
+            <SEO title="Blog" keywords="Blog" />
+            <div className={blogStyles.mainContainer}>
             <h1 className={blogStyles.title}>Blog</h1>
             <ol className={blogStyles.posts}>
 
@@ -45,6 +46,7 @@ const BlogPage = () => {
                 })}
 
             </ol>
+            </div>
             </Layout>
         </div>
     )

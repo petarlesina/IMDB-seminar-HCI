@@ -1,0 +1,133 @@
+*{
+    box-sizing: border-box;
+}
+
+.card-container2{
+    width:65%;
+    margin: 70px auto;
+    
+}
+
+.heading2{
+    font-size: 30px;
+    margin: 2rem;
+}
+
+.card-row2{
+    margin-top: 2rem;
+    margin-bottom: 9rem;
+
+    display: flex;  
+    flex-direction: row;
+    justify-content: space-around;
+    flex-flow: wrap;
+}
+
+.card2{
+    width: 30%;
+    background: #fff;
+    border: 1px solid red;
+    margin-bottom: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+    border: 2px solid yellow;
+    border-radius: 24px;
+}
+
+.card-header2{
+    text-align: left;
+    /* padding: 1rem; */
+    padding-left: 5%;
+    background: #77a9d4;
+    color: #1f4261;
+    border: 2px solid yellow;
+    border-bottom: none;
+    border-radius: 24px 24px 0 0;
+}
+
+.card-body2{
+    padding: 20px;
+    text-align: left;
+    font-size: 18px;
+
+}
+
+.picture{
+    border-radius: 50%;
+    width: 120px;
+    min-height: 120px;
+    max-height: auto;
+    height: auto;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.card2:hover{
+    transform: scale(1.15);
+    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    text-decoration: none;
+}
+
+
+.tekst-kartice{
+    font-weight: 600; 
+    text-decoration: none;
+    
+}
+.tekst-kartice:link{
+color: red;
+}
+
+
+
+.searchWrapper{
+    margin: 10px auto;
+    padding: 10px 30px;
+    transform: translate(0%, -20%);
+    
+}
+
+.searchBar {
+    width: 300px;
+    height: 40px;
+    border-radius: 50px;
+    border: 3px solid #eaeaea;
+    padding: 0px 10px;
+    /* padding: 1rem 0.5rem; */
+    font-size: 17px;
+}
+
+.searchWrapper::after {
+    content: '🔍';
+    right: 15px;
+}
+
+.searchBar:focus{
+    width: 380px;
+    border-color: red;
+    transition: 0.25s;
+}
+
+
+
+@media only screen and (max-width: 1010px) {
+    .card-container2{
+        width:100%;
+    }
+    .heading2{
+        padding:20px;
+        margin-left: 4rem;
+    }
+    .card2{
+        width:40%;
+    }
+}
+
+@media only screen and (max-width: 710px){
+    .card2{
+        width:75%;
+    }
+}
+
