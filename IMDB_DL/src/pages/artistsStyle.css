@@ -3,14 +3,14 @@
 }
 
 .card-container2{
-    width:65%;
+    width:85%;
     margin: 70px auto;
     
 }
 
 .heading2{
     font-size: 30px;
-    margin: 2rem;
+    margin: 3rem;
 }
 
 .card-row2{
@@ -19,7 +19,7 @@
 
     display: flex;  
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-evenly;
     flex-flow: wrap;
 }
 
@@ -28,6 +28,7 @@
     background: #fff;
     border: 1px solid red;
     margin-bottom: 50px;
+    margin-left: 2rem;
     transition: 0.3s;
     text-decoration: none;
     border: 2px solid yellow;
@@ -84,6 +85,7 @@ color: red;
 
 .searchWrapper{
     margin: 10px auto;
+    margin-left: 1rem;
     padding: 10px 30px;
     transform: translate(0%, -20%);
     
@@ -110,24 +112,121 @@ color: red;
     transition: 0.25s;
 }
 
+@media only screen and (max-width: 1272px){
 
+    .card-container2{
+        width:95%;
+        margin: 0.8rem;
+    }
+
+    .card-row2{
+        justify-content: space-evenly;
+    }
+
+    .card2{
+        width: 30%;
+        margin-left: 1rem;
+    }
+
+    .heading2{
+        margin-left: 3rem;
+    }
+
+     .searchBar{
+        width: 400px;
+    } 
+
+    .searchBar:focus{
+        width: 440px;
+    }
+
+}
 
 @media only screen and (max-width: 1010px) {
     .card-container2{
-        width:100%;
+        width:90%;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        /* margin-right: 2rem; */
     }
     .heading2{
-        padding:20px;
-        margin-left: 4rem;
+        margin-bottom: 0.5rem;
+    }
+    .card2{
+        width:40%;
+        
+    }
+
+    .card-row2{
+        justify-content: left;
+    }
+
+     /* .searchBar{
+        margin-right: 2rem;
+    }  */
+
+    
+}
+
+@media only screen and (max-width: 766px){
+    .card-container2{
+        width:80%;
+        
     }
     .card2{
         width:40%;
     }
-}
 
-@media only screen and (max-width: 710px){
-    .card2{
-        width:75%;
+    
+
+    .searchWrapper{
+        width: 100%;
+    } 
+
+    .searchBar{
+        width: 70%;
+    }
+
+    .searchBar:focus {
+        width: 80%;
+    }
+
+    .heading2{
+        margin-left: 3rem;
+        margin-bottom: 0rem;
     }
 }
 
+
+@media only screen and (max-width: 570px){
+
+    .card-container2{
+        width:90%;
+        margin: 0.8rem;
+    }
+    .card2{
+        width:70%;
+    }
+
+    .card-row2{
+        justify-content: space-evenly;
+    }
+
+    .searchWrapper{
+        width: 100%;
+    }
+
+    .searchBar{
+        width: 90%;
+    }
+
+    .searchBar:focus {
+        width: 90%;
+    }
+
+    .heading2{
+        /* padding:10px; */
+        margin: 3.5rem;
+        margin-bottom: 0rem;
+    }
+}
