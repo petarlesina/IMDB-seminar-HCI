@@ -145,9 +145,8 @@ color: red;
 @media only screen and (max-width: 1010px) {
     .card-container2{
         width:90%;
-        margin-left: 6rem;
-        margin-right: 6rem;
-        /* margin-right: 2rem; */
+        margin-left:5.4rem;
+        margin-right: 1rem;
     }
     .heading2{
         margin-bottom: 0.5rem;
@@ -168,10 +167,19 @@ color: red;
     
 }
 
-@media only screen and (max-width: 766px){
+@media only screen and (max-width: 966px) {
+    .card-container2{
+        margin-left:4.4rem;
+        margin-right: 2rem;
+
+    }
+}
+
+@media only screen and (max-width: 786px){
     .card-container2{
         width:80%;
-        
+        margin-left: 6rem;
+        margin-right: 6rem;
     }
     .card2{
         width:40%;
