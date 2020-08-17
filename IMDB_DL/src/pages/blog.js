@@ -4,8 +4,32 @@ import SEO from "../components/seo"
 
 import Layout from '../components/layout'
 import blogStyles from './blog.module.scss'
+import { useEffect } from "react"
+
+
+function ok(){
+    document.getElementById('tonyButton').addEventListener("click", function() {
+        document.querySelector("#popupModal").style.display = "flex";
+    });
+ 
+    document.querySelector("#closeButton").addEventListener("click", function() {
+        document.querySelector("#popupModal").style.display = "none";
+	});
+	
+	document.querySelector("#buttonSubmitPopUp").addEventListener("click", function() {
+        document.querySelector("#popupModal").style.display = "none";
+    });
+}
+
+
 
 const BlogPage = () => {
+
+
+    useEffect(() => {
+        ok();
+      }, []);
+
     const data = useStaticQuery(graphql`
          query {
              allMarkdownRemark {
@@ -32,6 +56,7 @@ const BlogPage = () => {
             <SEO title="Blog" keywords="Blog" />
             <div className={blogStyles.mainContainer}>
             <h1 className={blogStyles.title}>Blog</h1>
+            <a href="#" id="tonyButton" className={blogStyles.buttonPopUp}>+ Add new post</a>
             <ol className={blogStyles.posts}>
 
                 {data.allMarkdownRemark.edges.map((edge) =>{
@@ -47,6 +72,28 @@ const BlogPage = () => {
 
             </ol>
             </div>
+
+
+
+            
+ 
+<div id="popupModal" class={blogStyles.bgModal}>
+	<div class={blogStyles.modalContents}>
+ 
+		
+		<div id="closeButton" class={blogStyles.close}>+</div>
+		<img src="slika.jpg" alt=""></img>
+ 
+		<form action="">
+			<input type="text" placeholder="Title" class={blogStyles.inputTitle}></input>
+			<textarea class={blogStyles.inputText} rows="3" cols="10" placeholder="Write some text here"></textarea>
+			<a href="#" id="buttonSubmitPopUp" class={blogStyles.buttonSubmitPopUp}>Submit</a>
+		</form>
+ 
+	</div>
+</div>
+
+
             </Layout>
         </div>
     )

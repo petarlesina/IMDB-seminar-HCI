@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: "montserrat",sans-serif;
+    min-height: 100vh;
+    background-image: linear-gradient(125deg,#6a89cc,#b8e994); 
+  }
+  
+  .errorContainer{
+    width: 100%;
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    text-align: center;
+    color: #343434
+  }
+  
+  .errorContainer h1{
+    font-size: 160px;
+    margin: 0;
+    font-weight: 900;
+    letter-spacing: 20px;
+    background: url("../images/bg404.jpg") center no-repeat;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+  }
+  
+  .errorContainer a{
+    text-decoration: none;
+    background: #e55039aa;
+    color: #fff;
+    padding: 12px 24px;
+    display: inline-block;
+    border-radius: 25px;
+    font-size: 14px;
+    text-transform: uppercase;
+    transition: 0.25s;
+  }
+  
+  .errorContainer a:hover{
+    background: #e55039;
+    transform: scale(1.15);
+
+  }
+  

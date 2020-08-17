@@ -1,9 +1,17 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import "./navigation.css"
-import logo from "../images/logo.png"
+// import logo from "../images/logo.png"
+// import imdblogo from "../images/imdblogo.png"
+import { FaEllipsisH } from "react-icons/fa";
+import { FaAngleUp } from "react-icons/fa";
+
+
+
 
 const Navigation = ({menuItems}) => {
+
+
 
     const data = useStaticQuery(graphql`
     {
@@ -19,25 +27,32 @@ const Navigation = ({menuItems}) => {
     }
   `)
     return (
-        <div>
         
-        <ul className = "navList">
-        <li className = "title" >
-                <Link  to="/">
-            {/* {data.site.siteMetadata.title} */}
-            <img className="logo" src={logo}></img> </Link> 
-        </li>
-            
-        {menuItems.map(({ link, text}) => (
-            <div className="test">
-                <li className = "item" key={text}>
-                    <Link className = "button" activeClassName ="activeButton" to={link}>{text}</Link>
-                </li>
-            </div>
+        <nav>
+
+        
+        <ul>
+        <li className = "logo" >
+         
+         IMDB
+       </li>
+       <input type="checkbox" id="chk" value="unchecked"></input>
+       <label for="chk" class="showMenuBtn"><FaEllipsisH size="1.4rem"/></label>
+        
+            {menuItems.map(({ link, text}) => (
+                <li id="oneItem" class="items" key={text}>
+                    <Link class="navButton" to={link}>{text}</Link>
+                </li>    
             ))}
+        
+        <label for="chk" class="hideMenuBtn"><FaAngleUp size="1.4rem"/></label>
+        {/* <li id="ham" class="ham"><FaBars size="1.4rem"/> </li> */}
         </ul>
 
-        </div>
+
+
+        </nav>
+        
     )
 }
 
