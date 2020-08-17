@@ -53,7 +53,7 @@ nav ul li.logo{
 
 nav ul li a{
     color:white;
-    font-size: 18px;
+    font-size: 22px;
     text-decoration: none;
     transition: 0.4s;
 }
@@ -61,6 +61,12 @@ nav ul li a{
 nav ul li:hover a{
     color: cyan;
 
+}
+
+
+.activeButton{
+    color:#4da6ff;
+    /* text-decoration: underline; */
 }
 
 .showMenuBtn, .hideMenuBtn{

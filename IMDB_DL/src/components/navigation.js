@@ -41,7 +41,7 @@ const Navigation = ({menuItems}) => {
         
             {menuItems.map(({ link, text}) => (
                 <li id="oneItem" class="items" key={text}>
-                    <Link class="navButton" to={link}>{text}</Link>
+                    <Link class="navButton" activeClassName ="activeButton" to={link}>{text}</Link>
                 </li>    
             ))}
         
