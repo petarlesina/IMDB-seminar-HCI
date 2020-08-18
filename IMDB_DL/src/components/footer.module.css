@@ -75,8 +75,9 @@
   }
 
   .txtb:focus{
-    border: 2px solid red;
-
+    border: 2px solid #009900;
+    transition: 0.15s;
+    transform: scale(1.05);
   }
 
   .sub{
@@ -94,8 +95,8 @@
   }
 
   .sub:hover{
-    transform: scale(1.15);
-    transition: all .1s ease;
+    transform: scale(1.1);
+    transition: 0.15s;
   }
 
 

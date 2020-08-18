@@ -48,7 +48,7 @@ nav ul li.logo{
     font-weight: 600;
     cursor: default;
     user-select: none;
-    
+    outline: none;
 }
 
 nav ul li a{
@@ -56,6 +56,7 @@ nav ul li a{
     font-size: 22px;
     text-decoration: none;
     transition: 0.2s;
+    outline: none;
 }
 
 .navButton:hover{
@@ -66,7 +67,8 @@ nav ul li a{
 
 .activeButton{
     color:#4da6ff;
-    /* text-decoration: underline; */
+    text-decoration: underline;
+    text-underline-offset: 0.35rem;
 }
 
 .showMenuBtn, .hideMenuBtn{
@@ -90,6 +92,7 @@ nav ul li a{
 #chk{
     position: absolute;
     visibility: hidden;
+    z-index: -999;
 }
 
 
@@ -151,10 +154,11 @@ nav ul li a{
      #chk:checked ~ .hideMenuBtn{
         
         display:block; 
+        
     
 }
         #chk:checked ~ .showMenuBtn{
-        
+         
         display:none; 
 
 } 

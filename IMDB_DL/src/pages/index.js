@@ -10,15 +10,16 @@ const IndexPage = () => {
 
   const cardArray = [
  
-    {
-      path: "/albums",
-      title: "Albums",
-      text: "Here you can discover new albums, who knows what you can find!",
-    },
+    
     {
       path: "/artists",
       title: "Artists",
       text: "Discover new or rediscover old groups",
+    },
+    {
+      path: "/albums",
+      title: "Albums",
+      text: "Here you can discover new albums, who knows what you can find!",
     },
     {
       path: "/blog",
@@ -39,35 +40,6 @@ const IndexPage = () => {
 
               <div class="card-row">
 
-                {/* <div class="card">
-                <div class="card-header">
-                  <h1>Albums</h1>
-                </div>
-                <div class="card-body">
-                  <p>tekst za albume tekst za albume tekst za albume tekst za albume</p>
-                  <a href="/albums" class="btn">Read more</a>
-                </div>
-                </div>
-
-                <div class="card">
-                <div class="card-header">
-                  <h1>DRUGI CARD</h1>
-                </div>
-                <div class="card-body">
-                  <p>DRUGI TEKST PRVI TEKST PRVI TEKST PRVI TEKST PRVI TEKST </p>
-                  <a><Link className="btn" to="/albums">Read more</Link></a>
-                </div>
-                </div>
-
-                <div class="card">
-                <div class="card-header">
-                  <h1>TRECI CARD</h1>
-                </div>
-                <div class="card-body">
-                  <p>TRECI TEKST PRVI TEKST PRVI TEKST PRVI TEKST PRVI TEKST </p>
-                  <a href="#" class="btn">Read more</a>
-                </div>
-                </div> */}
 
             {cardArray.map(card => (
             <div className="card">

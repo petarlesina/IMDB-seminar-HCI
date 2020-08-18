@@ -32,10 +32,10 @@ const Navigation = ({menuItems}) => {
 
         
         <ul>
-        <li className = "logo" >
-         
-         IMDB
+        <li className = "logo" ><Link to="/">IMDB</Link>
        </li>
+
+       
        <input type="checkbox" id="chk" value="unchecked"></input>
        {/* <label for="chk" class="showMenuBtn"><FaEllipsisH size="1.4rem"/></label> */}
        <label for="chk" class="showMenuBtn"><FaChevronDown size="1.4rem"/></label>
