@@ -3,8 +3,8 @@ import { Link, graphql, useStaticQuery } from 'gatsby'
 import "./navigation.css"
 // import logo from "../images/logo.png"
 // import imdblogo from "../images/imdblogo.png"
-import { FaEllipsisH } from "react-icons/fa";
-import { FaAngleUp } from "react-icons/fa";
+import { FaChevronDown } from "react-icons/fa";
+import { FaChevronUp } from "react-icons/fa";
 
 
 
@@ -37,7 +37,8 @@ const Navigation = ({menuItems}) => {
          IMDB
        </li>
        <input type="checkbox" id="chk" value="unchecked"></input>
-       <label for="chk" class="showMenuBtn"><FaEllipsisH size="1.4rem"/></label>
+       {/* <label for="chk" class="showMenuBtn"><FaEllipsisH size="1.4rem"/></label> */}
+       <label for="chk" class="showMenuBtn"><FaChevronDown size="1.4rem"/></label>
         
             {menuItems.map(({ link, text}) => (
                 <li id="oneItem" class="items" key={text}>
@@ -45,7 +46,7 @@ const Navigation = ({menuItems}) => {
                 </li>    
             ))}
         
-        <label for="chk" class="hideMenuBtn"><FaAngleUp size="1.4rem"/></label>
+        <label for="chk" class="hideMenuBtn"><FaChevronUp size="1.4rem"/></label>
         {/* <li id="ham" class="ham"><FaBars size="1.4rem"/> </li> */}
         </ul>
 

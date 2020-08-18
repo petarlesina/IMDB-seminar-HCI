@@ -110,9 +110,16 @@
     }
 
     .leftColumn{
-      widows: 100px;
-      text-align: center;
+      width: 100%;
+      text-align: left;
     }
+
+    
+  .img {
+    
+    margin-right: 0.4em;
+    
+  }
 
   }
 
@@ -129,4 +136,9 @@
       transform: scale(1.03);
       transition: all .1s ease;
     }
+
+    .leftColumn{
+      text-align: center;
+    }
+
   }
