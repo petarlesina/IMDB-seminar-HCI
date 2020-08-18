@@ -26,24 +26,25 @@
 .card2{
     width: 30%;
     background: #fff;
-    border: 1px solid red;
+    /* border: 1px solid red; */
     margin-bottom: 50px;
     margin-left: 2rem;
     transition: 0.3s;
     text-decoration: none;
-    border: 2px solid yellow;
+    border: 3px solid black;
     border-radius: 24px;
 }
 
 .card-header2{
     text-align: left;
     /* padding: 1rem; */
-    padding-left: 5%;
-    background: #77a9d4;
+    /* padding-left: 5%; */
+    background:  #468847;
     color: #1f4261;
-    border: 2px solid yellow;
+    /* border: 2px solid #468847; */
     border-bottom: none;
-    border-radius: 24px 24px 0 0;
+    /* padding-bottom: 1px; */
+    border-radius: 15px 15px 0 0;
 }
 
 .card-body2{
@@ -88,7 +89,7 @@ color: red;
     margin-left: 1rem;
     padding: 10px 30px;
     transform: translate(0%, -20%);
-    
+    border-radius: 50px;
 }
 
 .searchBar {
@@ -107,9 +108,10 @@ color: red;
 }
 
 .searchBar:focus{
-    width: 380px;
+    /* width: 380px;  */
     border-color: red;
-    transition: 0.25s;
+    /* transition: 0.25s; */
+    
 }
 
 @media only screen and (max-width: 1272px){
@@ -214,6 +216,7 @@ color: red;
     }
     .card2{
         width:70%;
+        height: 330px;
     }
 
     .card-row2{

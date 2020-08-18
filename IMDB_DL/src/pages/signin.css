@@ -14,7 +14,8 @@
      /* transform: translate(-50%, -50%); */
      display: flex;
      flex-direction: column;
-     background: black;
+     background: rgba(0,0,0, 0.3);
+     
      text-align: center;
      padding: 20px;
      width: 35%;
@@ -36,38 +37,41 @@
      display:block;
      margin: 20px auto;
      text-align: center;
-     border: 2px solid yellow;
+     border: 2px solid #ffffff;
      padding: 14px 10px;
      width: 240px;
      outline: none;
      color: white;
      border-radius: 24px;
      transition: 0.25s;
+     font-weight: 200;
  }
 
  .box input[type="text"]:focus, .box input[type="password"]:focus{
     width: 280px;
-    border-color: red;
+    border-color: #79b979;
 
 }
 
 .box input[type="submit"]{
      border:0;
-     background: none;
+     background: #89c28a;
      display:block;
      margin: 20px auto;
      text-align: center;
-     border: 2px solid red;
+     border: 2px solid #89c28a;
      padding: 14px 40px;
      outline: none;
      color: white;
+     font-weight: 900;
      border-radius: 24px;
      transition: 0.25s;
      cursor: pointer;
 }
 
 .box input[type="submit"]:hover{
-    background: blue;
+    background: #468847;
+    border: 2px solid #468847;
 }
 
 

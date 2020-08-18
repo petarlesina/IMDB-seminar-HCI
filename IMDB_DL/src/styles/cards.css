@@ -30,8 +30,8 @@
     margin-bottom: 50px;
     transition: 0.3s;
     text-decoration: none;
-    border: 2px solid yellow;
-    border-radius: 24px;
+    border: 2px solid black;
+    /* border-radius: 24px; */
 }
 
 .card-header{
@@ -39,9 +39,9 @@
     padding: 50px 10px;
     background: rgb(43, 226, 156);
     color: blue;
-    border: 2px solid yellow;
+    /* border: 2px solid black; */
     border-bottom: none;
-    border-radius: 24px 24px 0 0;
+    /* border-radius: 24px 24px 0 0; */
 }
 
 .card-body{

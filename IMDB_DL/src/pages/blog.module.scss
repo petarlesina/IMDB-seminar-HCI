@@ -22,18 +22,19 @@ $blue: #1686d9;
     margin: 2rem 14rem;
     
     a {
-        background-color: #ffcccc;
+        //background-color: #ffcccc;
+        background-color: #ffb3b3;
         color: black;
         display: block;
         padding: 1rem;
         text-decoration: none;
         // max-width: 720px;
-        border: 2px solid yellow;
+        border: 2px solid black;
         border-radius: 24px;
     }
 
     a:hover {
-        background: #ff8080;
+        background: #ff6666;
     }
 
     h3{
@@ -64,7 +65,7 @@ $blue: #1686d9;
 .modalContents {
 	height: 400px;
 	width: 600px;
-	background-color: rgb(50, 77, 136);
+	background-color: #f2e6ff;
 	text-align: center;
 	padding: 10px;
 	position: relative;
@@ -73,8 +74,8 @@ $blue: #1686d9;
  
 
 .buttonPopUp,  .buttonSubmitPopUp{
-	background-color: #ffcccc;
-	border: 2px solid white;
+	background-color: #ffb3b3;
+	border: 2px solid black;
 	border-radius: 30px;
 	text-decoration: none;
 	padding: 10px 28px;
@@ -82,10 +83,14 @@ $blue: #1686d9;
 	
 	display: inline-block;
 	&:hover {
-		background-color: white;
+		background: #ff6666;
 		color: #ffcccc;
 		border: 2px solid #ffcccc;
 	}
+}
+
+.buttonSubmitPopUp:hover{
+    background: #009933;
 }
 
 .buttonPopUp{
@@ -101,7 +106,7 @@ $blue: #1686d9;
 	top: 0;
 	right: 0px;
 	font-size: 42px;
-	color: #333;
+	color: red;
 	transform: rotate(45deg);
 	cursor: pointer;
 	&:hover {
@@ -128,7 +133,7 @@ $blue: #1686d9;
 }
 
 .inputTitle:focus, .inputText:focus{
-    border: 3px solid blue;
+    border: 3px solid #468847;
     width: 73%;
     transition: 0.25s;
 }

@@ -34,7 +34,7 @@ const IndexPage = () => {
             <div class="card-container">
               
               <div class="heading">
-                <h1>Homepage</h1>
+                <h1>INTERNET MUSIC DATABASE</h1>
               </div>
 
               <div class="card-row">
