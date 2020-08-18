@@ -6,17 +6,48 @@ import { useEffect } from "react"
  
  
 function ok(){
-    document.getElementById('tonyButton').addEventListener("click", function() {
-        document.querySelector('.bg-modal').style.display = "flex";
+    const charactersList = document.getElementById('charactersList');
+const searchBar = document.getElementById('searchBar');
+let hpCharacters = [];
+
+searchBar.addEventListener('keyup', (e) => {
+    const searchString = e.target.value.toLowerCase();
+
+    const filteredCharacters = hpCharacters.filter((character) => {
+        return (
+            character.name.toLowerCase().includes(searchString) 
+        );
     });
- 
-    document.querySelector('.close').addEventListener("click", function() {
-        document.querySelector('.bg-modal').style.display = "none";
-	});
-	
-	document.querySelector('.tonyButtonSubmit').addEventListener("click", function() {
-        document.querySelector('.bg-modal').style.display = "none";
-    });
+    displayCharacters(filteredCharacters);
+});
+
+const loadCharacters = async () => {
+    try {
+        const res = await fetch('https://hp-api.herokuapp.com/api/characters');
+        hpCharacters = await res.json();
+        displayCharacters(hpCharacters);
+    } catch (err) {
+        console.error(err);
+    }
+};
+
+const displayCharacters = (characters) => {
+    const htmlString = characters
+        .map((character) => {
+            return `
+            <li class="character">
+                <h2>${character.name}</h2>
+                <p>House: ${character.house}</p>
+                <img src="${character.image}"></img>
+            </li>
+        `;
+        })
+        .join('');
+    charactersList.innerHTML = htmlString;
+};
+
+loadCharacters();
+
 }
  
  
@@ -27,44 +58,19 @@ const Tony = () => {
       }, []);
  
     return (
- 
-        <div>
-        <header>
- 
-</header>
- 
- 
- 
-<section class="hero">
-	<div class="hero-content">
-		<h1>Let's create a modal</h1>
-		<h3>Sign Up Now</h3>
-		<a href="#" id="tonyButton" class="tonyButton">Click Me</a>
+		<div class="container">
+		<h1>Harry Potter Characters</h1>
+		<div id="searchWrapper">
+			<input
+				type="text"
+				name="searchBar"
+				id="searchBar"
+				placeholder="search for a character"
+			/>
+		</div>
+		<ul id="charactersList"></ul>
 	</div>
-</section>
- 
- 
- 
- 
- 
-<div class="bg-modal">
-	<div class="modal-contents">
- 
-		<div class="close">+</div>
-		<img src="slika.jpg" alt=""></img>
- 
-		<form action="">
-			<input type="text" placeholder="Name" class="tonyInputTitle"></input>
-			{/* <input type="email" placeholder="E-Mail" class="tonyInputText"></input> */}
-			<textarea class="tonyInputText" rows="2" cols="10" placeholder="Write some text here"></textarea>
-			{/* <a href="#" class="tonyButtonSubmit">Submit</a> */}
-		</form>
- 
-	</div>
-</div>
- 
- 
-</div>
+	
  
     )
  

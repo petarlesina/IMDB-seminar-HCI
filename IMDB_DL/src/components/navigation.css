@@ -93,7 +93,7 @@ nav ul li a{
 }
 
 
-@media all and (max-width: 550px){
+@media all and (max-width: 570px){
 
     .showMenuBtn, .hideMenuBtn{
         display: block;
