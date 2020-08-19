@@ -2,98 +2,115 @@
     box-sizing: border-box;
 }
 
-.card-container2{
-    width:85%;
+.card-container3{
+    width:100%;
     margin: 70px auto;
     
 }
 
-.heading2{
+.heading3{
     font-size: 30px;
-    margin: 3rem;
+    margin-left: calc(7% + 5rem);
 }
 
-.card-row2{
-    margin-top: 2rem;
+.card-row3{
+    width: 80%;
+    margin-top: 1rem;
     margin-bottom: 9rem;
-
+    
+    margin-left: calc(7% + 3rem);
+    margin-right: 10%;
     display: flex;  
     flex-direction: row;
-    justify-content: space-evenly;
+    justify-content: left;
     flex-flow: wrap;
 }
 
-.card2{
-    width: 30%;
+.card3{
+     width: 22%;
     background: #fff;
     /* border: 1px solid red; */
     margin-bottom: 50px;
-    margin-left: 2rem;
+    margin-left: 2rem; 
     transition: 0.3s;
     text-decoration: none;
     border: 2px solid black; 
     border-radius: 25px;
 }
 
-.card-header2{
+.card-header3{
     text-align: left;
-    /* padding: 1rem; */
-    /* padding-left: 5%; */
+    padding-left: 5%;
     background:  #468847;
     color: #1f4261;
-    /* border: 2px solid #468847; */
     border-bottom: none;
     /* padding-bottom: 1px; */
     border-radius: 21px 21px 0 0;
 }
 
-.card-body2{
+.card-body3{
     padding: 20px;
+    padding-bottom: 0px;
     text-align: left;
     font-size: 18px;
 
     border-radius: 0 0 25px 25px;
 }
 
-.picture{
-    border-radius: 50%;
-    width: 120px;
+.picture3{
+    border-radius: 20%;
+    width: 150px;
     min-height: 120px;
     max-height: auto;
     height: auto;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 
-.card2:hover{
-    transform: scale(1.15);
+.card3:hover{
+    transform: scale(1.1);
     box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
     text-decoration: none;
 }
 
+.kategorija-kartice{
+    margin-top: 2.5rem;
+}
 
-.tekst-kartice{
-    font-weight: 600; 
+.kategorija-kartice, .godina-kartice, .madeby-kartice {
+    font-weight: 550; 
     text-decoration: none;
-    
-}
-.tekst-kartice:link{
-color: red;
+    color: black;
+    margin-bottom: 10px;
 }
 
+/* .madeby-kartice{
+    font-size: 24px;
+} */
 
+.link-artist{
+    font-size: 28px;
+    font-weight: 650; 
+    color: black;
+    text-decoration: none;
+}
 
-.searchWrapper{
-    margin: 10px auto;
-    margin-left: 1rem;
+.link-artist:hover{
+    color: #33ccff;
+}
+
+.searchWrapper3{
+    margin-top: 80px;
+    margin-left: calc(7% + 3rem);
+    margin-bottom: 20px;
     padding: 10px 30px;
     transform: translate(0%, -20%);
     border-radius: 50px;
 }
 
-.searchBar {
+.searchBar3 {
     width: 300px;
     height: 40px;
     border-radius: 50px;
@@ -103,12 +120,12 @@ color: red;
     font-size: 17px;
 }
 
-.searchWrapper::after {
+.searchWrapper3::after {
     content: '🔍';
     right: 15px;
 }
 
-.searchBar:focus{
+.searchBar3:focus{
      width: 380px; 
     border-color: #9bca9b;
     outline: none;
@@ -116,130 +133,82 @@ color: red;
     
 }
 
-@media only screen and (max-width: 1272px){
-
-    .card-container2{
-        width:95%;
-        margin: 0.8rem;
+@media only screen and (max-width: 1500px){
+    .card3{
+        width: 30%;
     }
+    .card-row3{
+    margin-left: 10%;
+    }
+}
 
-    .card-row2{
+@media only screen and (max-width: 1344px){
+    .card3{
+        width: 45%;
+    }
+    .card-row3{
         justify-content: space-evenly;
     }
 
-    .card2{
-        width: 30%;
-        margin-left: 1rem;
-    }
-
-    .heading2{
-        margin-left: 3rem;
-    }
-
-     .searchBar{
-        width: 400px;
-    } 
-
-    .searchBar:focus{
-        width: 440px;
-    }
-
 }
 
-@media only screen and (max-width: 1010px) {
-    .card-container2{
-        width:90%;
-        margin-left:5.4rem;
-        margin-right: 1rem;
-    }
-    .heading2{
-        margin-bottom: 0.5rem;
-    }
-    .card2{
-        width:40%;
-        
-    }
-
-    .card-row2{
-        justify-content: left;
-    }
-
-     /* .searchBar{
-        margin-right: 2rem;
-    }  */
-
-    
-}
-
-@media only screen and (max-width: 966px) {
-    .card-container2{
-        margin-left:4.4rem;
-        margin-right: 2rem;
-
-    }
-}
-
-@media only screen and (max-width: 786px){
-    .card-container2{
-        width:80%;
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
-    .card2{
-        width:40%;
-    }
-
-    
-
-    .searchWrapper{
-        width: 100%;
-    } 
-
-    .searchBar{
-        width: 70%;
-    }
-
-    .searchBar:focus {
+@media only screen and (max-width: 900px){
+    .card3{
         width: 80%;
     }
 
-    .heading2{
-        margin-left: 3rem;
-        margin-bottom: 0rem;
+    .card-row3{
+        margin-left: 8%;
+    }
+
+    .heading3{
+        margin-left: calc(7% + 5rem);
+    }
+
+    .searchWrapper3{
+
+        margin-left: calc(7% + 3.5rem);
     }
 }
 
+@media only screen and (max-width: 678px){
 
-@media only screen and (max-width: 570px){
-
-    .card-container2{
-        width:90%;
-        margin: 0.8rem;
-    }
-    .card2{
-        width:70%;
-        height: 330px;
+    .heading3{
+        margin-left: calc(7% + 4.5rem);
     }
 
-    .card-row2{
-        justify-content: space-evenly;
+    .searchWrapper3{
+
+        margin-left: calc(7% + 2.5rem);
     }
 
-    .searchWrapper{
-        width: 100%;
+    .searchBar3{
+        width: 60%;
     }
 
-    .searchBar{
-        width: 90%;
+    .searchBar3:focus{
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 420px){
+
+    
+    .heading3{
+        margin-left: calc(7% + 3.7rem);
     }
 
-    .searchBar:focus {
-        width: 90%;
+    .searchWrapper3{
+        margin-top: 60px;
+        margin-left: calc(7% + 1.7rem);
     }
 
-    .heading2{
-        /* padding:10px; */
-        margin: 3.5rem;
-        margin-bottom: 0rem;
+    .searchBar3{
+        width: 80%;
     }
+
+    .searchBar3:focus{
+        width: 85%;
+    }
+
 }
