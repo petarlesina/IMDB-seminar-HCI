@@ -103,12 +103,12 @@
 .link-artist{
     font-size: 28px;
     font-weight: 650; 
-    color: black;
+    color: #468847;
     text-decoration: none;
 }
 
 .link-artist:hover{
-    color: #468847;
+    color: #abd4ac;
 }
 
 .searchWrapper3{

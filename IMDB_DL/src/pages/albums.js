@@ -107,7 +107,7 @@ const AlbumsPage = () => {
 
               <div class="card-row3">
               {cardArray.map(card => (
-            <Link to="../temp/artist-temp" className="card3">
+            <Link to="../temp/album-temp" className="card3">
             <div class="card-header3">
                   <h1>{card.title}</h1>
             </div>
@@ -117,7 +117,7 @@ const AlbumsPage = () => {
                 <p class="kategorija-kartice">Category: {card.category}</p>
                 <p class="godina-kartice">Year: {card.year}</p>
                 <p class="madeby-kartice">
-                  <Link to={card.path} className="link-artist" key={card.path}> {card.madeby} </Link>
+                  <Link to="../temp/artist-temp" className="link-artist" key={card.path}> {card.madeby} </Link>
                   </p>
                 
                 </div>
