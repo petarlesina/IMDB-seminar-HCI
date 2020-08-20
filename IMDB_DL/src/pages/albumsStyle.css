@@ -13,6 +13,11 @@
     margin-left: calc(7% + 5rem);
 }
 
+.heading3 h1{
+    margin-bottom: 0;
+}
+
+
 .card-row3{
     width: 80%;
     margin-top: 1rem;
@@ -37,6 +42,10 @@
     border: 2px solid black; 
     border-radius: 25px;
     /* border: 1px solid black; */
+}
+
+.card3 h1{
+    margin-bottom: 20px;
 }
 
 .card-header3{
