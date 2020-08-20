@@ -107,7 +107,7 @@ const AlbumsPage = () => {
 
               <div class="card-row3">
               {cardArray.map(card => (
-            <Link to="/" className="card3">
+            <Link to="../temp/artist-temp" className="card3">
             <div class="card-header3">
                   <h1>{card.title}</h1>
             </div>

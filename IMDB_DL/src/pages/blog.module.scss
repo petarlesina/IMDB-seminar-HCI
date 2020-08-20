@@ -73,8 +73,8 @@ $blue: #1686d9;
 }
  
 
-.buttonPopUp,  .buttonSubmitPopUp{
-	background-color: #ffb3b3;
+.buttonPopUp{
+	background-color: #ffcccc;
 	border: 1px solid black;
 	border-radius: 30px;
 	text-decoration: none;
@@ -89,18 +89,61 @@ $blue: #1686d9;
 	}
 }
 
-.buttonSubmitPopUp:hover{
-    background: #009933;
-    border: 2px solid #009933;
+.popupButtonsContainer{
+    margin-top: 4.5rem;
+    margin-bottom: 9rem;
+
+    display: flex;  
+    flex-direction: row;
+    justify-content: center;
+    flex-flow: wrap;
 }
+
+.buttonCancelPopUp{
+    background-color: #ffb3b3;
+	// border: 1px solid #e62e00;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+    color: black;
+    margin-right: 10px;
+	
+	display: inline-block;
+	&:hover {
+		background: #e62e00;
+		color: #ffcccc;
+		// border: solid #ffcccc;
+	}
+}
+
+.buttonSubmitPopUp{
+    background-color:#80ffaa;
+	// border: 1px solid #00e64d;
+	border-radius: 30px;
+	text-decoration: none;
+	padding: 10px 28px;
+	color: black;
+	
+	display: inline-block;
+	&:hover {
+		background: #009933;
+        // border: 1px solid #009933;
+		color: #ffcccc;
+		
+	}
+
+
+}
+
+
 
 .buttonPopUp{
     margin: 2rem 14rem 0.1rem;
 }
 
-.buttonSubmitPopUp{
-    margin-top: 3.7rem;
-}
+// .buttonSubmitPopUp{
+//     margin-top: 3.7rem;
+// }
 
 .close {
 	position: absolute;
@@ -111,7 +154,7 @@ $blue: #1686d9;
 	transform: rotate(45deg);
 	cursor: pointer;
 	&:hover {
-		color: #cc0052;
+		color:  #ff9999;
 	}
 }
 
@@ -134,7 +177,7 @@ $blue: #1686d9;
 }
 
 .inputTitle:focus, .inputText:focus{
-    border: 3px solid #468847;
+    border: 2px solid #468847;
     width: 73%;
     outline: none;
     transition: 0.25s;
@@ -151,9 +194,14 @@ $blue: #1686d9;
     .buttonPopUp{
         margin: 1.5rem 3rem;
     }
+
+    .inputText{
+        height: 5em;
+    }
     
-    .buttonSubmitPopUp{
-        margin-top: 0.7rem;
+    .popupButtonsContainer{
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     .modalContents {
@@ -165,32 +213,69 @@ $blue: #1686d9;
 
   }
 
+  @media only screen and (max-width: 700px) {
+    .popupButtonsContainer{
+        margin-top: 2rem;
+        margin-bottom: 1rem;
+    }
 
+    .modalContents {
+        height: 350px;
+        width: 500px;
+    }
+
+    .modalContents {
+        width: 90%;
+        
+    }
+
+    .inputText{
+        height: 8em;
+    }
+
+
+  }
   @media only screen and (max-width: 430px) {
     .modalContents {
-        height: 300px;
+        height: 400px;
         width: 500px;
     }
     .inputTitle, .inputText{
         width: 87%;
     }
 
+    .inputText{
+        height: 10em;
+    }
     .inputTitle:focus, .inputText:focus{
         width: 91%;
     }
 
-    .buttonSubmitPopUp{
-        margin-top: 1.7rem;
-    }
+    
 
     .modalContents {
-        width: 80%;
+        width: 90%;
         
+    }
+
+    .popupButtonsContainer{
+        margin-top: 1.5rem;
+        margin-bottom: 0rem;
+    }
+
+    .buttonCancelPopUp, .buttonSubmitPopUp{
+        width: 87%;
+        
+    }
+
+    .buttonSubmitPopUp{
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 
   }
 
-  @media only screen and (max-width: 320px) {
+  @media only screen and (max-width: 340px) {
     .title{
         margin: 1.5rem;
     }
@@ -201,7 +286,21 @@ $blue: #1686d9;
         margin: 0rem 1.5rem;
     }
     
+    .modalContents {
+        width: 95%;
+        
+    }
 
+    .inputTitle, .inputText{
+        width: 92%;
+    }
+
+    .popupButtonsContainer{
+        margin-top: 1.3rem;
+        // margin-bottom: 1rem;
+    }
+
+    
   }
 
  

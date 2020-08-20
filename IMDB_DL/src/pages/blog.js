@@ -16,9 +16,16 @@ function ok(){
         document.querySelector("#popupModal").style.display = "none";
 	});
 	
-	document.querySelector("#buttonSubmitPopUp").addEventListener("click", function() {
+	document.querySelector("#buttonCancelPopUp").addEventListener("click", function() {
         document.querySelector("#popupModal").style.display = "none";
     });
+
+
+    document.querySelector("#buttonSubmitPopUp").addEventListener("click", function() {
+        document.querySelector("#popupModal").style.display = "none";
+    });
+    
+
 }
 
 
@@ -86,8 +93,11 @@ const BlogPage = () => {
  
 		<form action="">
 			<input type="text" placeholder="Title" class={blogStyles.inputTitle}></input>
-			<textarea class={blogStyles.inputText} rows="3" cols="10" placeholder="Write some text here"></textarea>
+			<textarea class={blogStyles.inputText} rows="4" cols="10" placeholder="Write some text here"></textarea>
+            <div class={blogStyles.popupButtonsContainer}>
+			<a href="#" id="buttonCancelPopUp" class={blogStyles.buttonCancelPopUp}>Cancel</a>
 			<a href="#" id="buttonSubmitPopUp" class={blogStyles.buttonSubmitPopUp}>Submit</a>
+            </div>
 		</form>
  
 	</div>

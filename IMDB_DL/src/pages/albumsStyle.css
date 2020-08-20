@@ -36,6 +36,7 @@
     text-decoration: none;
     border: 2px solid black; 
     border-radius: 25px;
+    /* border: 1px solid black; */
 }
 
 .card-header3{
@@ -98,12 +99,12 @@
 }
 
 .link-artist:hover{
-    color: #00b300;
+    color: #468847;
 }
 
 .searchWrapper3{
     margin-top: 80px;
-    margin-left: calc(7% + 3rem);
+    margin-left: calc(7% + 3.2rem);
     margin-bottom: 20px;
     padding: 10px 30px;
     transform: translate(0%, -20%);

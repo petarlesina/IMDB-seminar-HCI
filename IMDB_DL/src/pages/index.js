@@ -42,7 +42,7 @@ const IndexPage = () => {
 
 
             {cardArray.map(card => (
-            <div className="card">
+            <Link to={card.path} className="card">
             <div class="card-header">
                   <h1>{card.title}</h1>
             </div>
@@ -50,7 +50,8 @@ const IndexPage = () => {
                 <p>{card.text}</p>
                 <Link to={card.path} className="btn" key={card.path}> Read more </Link>
                 </div>
-                </div>
+                
+                </Link>
             ))}
 
               </div>
