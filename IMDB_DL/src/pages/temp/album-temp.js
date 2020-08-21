@@ -5,8 +5,6 @@ import Layout from "../../components/layout"
 import "./albumTempStyle.css"
 import albumLogo from "../../images/masterofpuppets.jpg"
 
-import {FaStar} from "react-icons/fa";
-
 const AlbumsPage = () => {
 
     
@@ -30,7 +28,7 @@ const AlbumsPage = () => {
                 <ul class="infoNiz">
                 <li>Released March 03, 1986 </li>
                 <li>Trash metal </li>
-                <li>Made by <Link className="albumToArtistlink" to="/">Metallica</Link></li>
+                <li>Made by <Link className="albumToArtistlink" to="../artist-temp">Metallica</Link></li>
                 </ul>
             </div>
 

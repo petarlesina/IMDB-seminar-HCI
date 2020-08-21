@@ -1,4 +1,4 @@
-.albumContainer{
+.artistContainer{
     display: flex;
     flex-direction: column;
     /* background: #ffb3b3; */
@@ -14,7 +14,7 @@
     border-radius: 24px;
 }
 
-.albumHead{
+.artistHead{
     background: #ff8080;
     padding: 1rem;
     text-align: center;
@@ -22,14 +22,14 @@
     
 }
 
-.albumLogo{
+.artistLogo{
     margin-top: 2rem;
     display: flex;
     justify-content: center;
 }
 
-.albumInfo{
-    margin-top: 3rem;
+.artistInfo{
+    margin-top: 2rem;
     display:flex;
     justify-content: center;
     font-size: 20px;
@@ -39,37 +39,33 @@
     list-style: circle;
 }
 
-.albumPjesme{
+.artistAlbumi{
     /* margin-left: 30%; */
     display: flex;
     justify-content: center;
 }
 
-.albumTekst{
+.artistTekst{
     width: 90%;
     text-align: left;
     margin-left: 5%;
     margin-right: 5%;
 }
 
-.albumNiz{
+.artisNiz{
     list-style: upper-roman;
 }
 
-.albumLink{
+.linkNaAlbum{
     text-decoration: none;
     color:  #b30000;
 }
 
-.albumLink:hover, .albumToArtistlink:hover{
+.linkNaAlbum:hover{
     color:  #ffe6e6;
 }
 
-.albumToArtistlink{
-    text-decoration: none;
-    color:  #b30000;
-}
-
+/* 
 
 
 
@@ -134,7 +130,7 @@
 .rating-wrapper label:hover ~ label:after,
 .rating-wrapper input:checked ~ label:after{
     opacity: 1;
-}
+} */
 
 
 
@@ -168,7 +164,7 @@
 
 
 @media only screen and (max-width: 1240px) {
-    .albumContainer{
+    .artistContainer{
         width: 60%;
         margin-left: 20%;
     }
@@ -189,12 +185,12 @@
 }
 
 @media only screen and (max-width: 650px) {
-    .albumContainer{
+    .artistContainer{
         width: 80%;
         margin-left: 10%;
     }
     
-    .albumPjesme{
+    .artistAlbumi{
         width: 100%;
     }
 
@@ -202,57 +198,12 @@
         margin-left: 10%;
     }
 
-    .albumHead{
+    .artistHead{
         font-size: 1px;
     }
 
-    .albumTitle{
+    .artistTitle{
     font-size: 28px;
     }
 }
 
-@media only screen and (max-width: 440px) {
-
-    
-
-.rating-wrapper label{
-    width: 40px;
-    
-}
-
-.rating-wrapper label:before{
-    font-size: 50px;
-    
-}
-
-
-.rating-wrapper label:after{
-    font-size: 50px;
-    
-}
-
-
-}
-
-@media only screen and (max-width: 310px) {
-
-    
-
-    .rating-wrapper label{
-        width: 30px;
-        
-    }
-    
-    .rating-wrapper label:before{
-        font-size: 40px;
-        
-    }
-    
-    
-    .rating-wrapper label:after{
-        font-size: 40px;
-        
-    }
-    
-    
-    }
