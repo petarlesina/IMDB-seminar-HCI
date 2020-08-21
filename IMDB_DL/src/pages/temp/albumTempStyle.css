@@ -1,7 +1,9 @@
 .albumContainer{
     display: flex;
     flex-direction: column;
-    background: #ffb3b3;
+    /* background: #ffb3b3; */
+    background: linear-gradient(180deg, #ff9999, #ffb3b3);
+
     padding: 20px;
     width: 40%;
     height: 100%;
@@ -43,6 +45,13 @@
     justify-content: center;
 }
 
+.albumTekst{
+    width: 90%;
+    text-align: left;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
 .albumNiz{
     list-style: upper-roman;
 }
@@ -60,6 +69,75 @@
     text-decoration: none;
     color:  #b30000;
 }
+
+
+
+
+.gradeText{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    font-size: 24px;
+}
+
+.ratingContainer{
+    
+    margin-top: 0;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+.rating-wrapper input{
+    display: none;
+}
+
+.rating-wrapper{
+    direction: rtl;
+    
+}
+
+
+.rating-wrapper label{
+    display: inline-block;
+    width: 60px;
+    position: relative;
+    cursor: pointer;
+    
+}
+
+.rating-wrapper label:before{
+    content: "\2605";
+    position: absolute;
+    font-size: 70px;
+    display: inline-block;
+    top:0;
+    left: 0;
+    color:  #e6e6e6;
+}
+
+
+.rating-wrapper label:after{
+    content: "\2605";
+    position: absolute;
+    font-size: 70px;
+    display: inline-block;
+    top:0;
+    left: 0;
+    color: #ffff4d;
+    opacity: 0;
+}
+
+
+.rating-wrapper label:hover:after,
+.rating-wrapper label:hover ~ label:after,
+.rating-wrapper input:checked ~ label:after{
+    opacity: 1;
+}
+
+
+
 
 
 
@@ -84,6 +162,9 @@
         text-decoration: none;
         transition: 0.25s;
 }
+
+
+
 
 
 @media only screen and (max-width: 1240px) {
@@ -129,3 +210,49 @@
     font-size: 28px;
     }
 }
+
+@media only screen and (max-width: 440px) {
+
+    
+
+.rating-wrapper label{
+    width: 40px;
+    
+}
+
+.rating-wrapper label:before{
+    font-size: 50px;
+    
+}
+
+
+.rating-wrapper label:after{
+    font-size: 50px;
+    
+}
+
+
+}
+
+@media only screen and (max-width: 310px) {
+
+    
+
+    .rating-wrapper label{
+        width: 30px;
+        
+    }
+    
+    .rating-wrapper label:before{
+        font-size: 40px;
+        
+    }
+    
+    
+    .rating-wrapper label:after{
+        font-size: 40px;
+        
+    }
+    
+    
+    }

@@ -13,8 +13,18 @@
     margin-left: calc(7% + 5rem);
 }
 
-.heading3 h1{
-    margin-bottom: 0;
+
+.imgHolder{
+    display:flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+
+.star{
+    width: 80px;
+    min-height: 30px;
+    max-height: auto;
 }
 
 
@@ -58,9 +68,13 @@
     border-radius: 21px 21px 0 0;
 }
 
+.card-header3 h1{
+    margin-bottom: 6px;
+}
+
 .card-body3{
-    padding: 20px;
-    padding-bottom: 0px;
+    padding: 0 20px 0 20px;
+    /* padding-bottom: 0px; */
     text-align: left;
     font-size: 18px;
 

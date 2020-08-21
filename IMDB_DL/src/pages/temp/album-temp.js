@@ -5,6 +5,8 @@ import Layout from "../../components/layout"
 import "./albumTempStyle.css"
 import albumLogo from "../../images/masterofpuppets.jpg"
 
+import {FaStar} from "react-icons/fa";
+
 const AlbumsPage = () => {
 
     
@@ -89,7 +91,20 @@ const AlbumsPage = () => {
                     </li>
                 </ul>
             </div>
-            
+            <h2 class="gradeText">Grade the album:</h2>
+            <div class="ratingContainer">
+                
+                <div class="rating-wrapper">
+                    <input type="radio" name="rating" id="star1"></input><label for="star1"></label>
+                    <input type="radio" name="rating" id="star2"></input><label for="star2"></label>
+                    <input type="radio" name="rating" id="star3"></input><label for="star3"></label>
+                    <input type="radio" name="rating" id="star4"></input><label for="star4"></label>
+                    <input type="radio" name="rating" id="star5"></input><label for="star5"></label>
+                </div>
+
+            </div>
+
+
             </div>
 
             <Link to="/albums" className="albumBackButton"> ← Back </Link>

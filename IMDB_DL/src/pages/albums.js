@@ -3,6 +3,13 @@ import { Link } from "gatsby"
 import SEO from "../components/seo"
 import './albumsStyle.css'
 import logo from "../images/logo.png"
+import star48 from "../images/star48.jpg"
+import star39 from "../images/star39.jpg"
+import star42 from "../images/star42.jpg"
+import star from "../images/star.jpg"
+
+
+
 import photo from "../images/gatsby-icon.png"
 import Layout from '../components/layout'
 
@@ -17,7 +24,8 @@ const AlbumsPage = () => {
           category: "Rock",
           photo: logo,
           year: "1988",
-          madeby: "artist1"
+          madeby: "artist1",
+          grade:star48
         },
         {
           path: "",
@@ -25,7 +33,8 @@ const AlbumsPage = () => {
           category: "Jazz",
           photo: photo,
           year: "1981",
-          madeby: "artist4"
+          madeby: "artist4",
+          grade:star42
         },
         {
           path: "",
@@ -33,7 +42,8 @@ const AlbumsPage = () => {
           category: "Techno",
           photo: photo,
           year: "1948",
-          madeby: "artist3"
+          madeby: "artist3",
+          grade:star39
         },
         {
             path: "",
@@ -41,7 +51,8 @@ const AlbumsPage = () => {
             category: "Country",
             photo: photo,
             year: "1969",
-            madeby: "artist1"
+            madeby: "artist1",
+            grade:star42
           },
           {
             path: "",
@@ -49,7 +60,8 @@ const AlbumsPage = () => {
             category: "Rock",
             photo: photo,
             year: "1985",
-            madeby: "artist1"
+            madeby: "artist1",
+            grade:star39
           },
           {
             path: "",
@@ -57,7 +69,8 @@ const AlbumsPage = () => {
             category: "Classical",
             photo: photo,
             year: "1928",
-            madeby: "artist4"
+            madeby: "artist4",
+            grade:star48
           },
           {
             path: "",
@@ -65,7 +78,8 @@ const AlbumsPage = () => {
             category: "Rock",
             photo: photo,
             year: "2000",
-            madeby: "artist3"
+            madeby: "artist3",
+            grade:star39
           },
           {
             path: "",
@@ -73,7 +87,8 @@ const AlbumsPage = () => {
             category: "Metal",
             photo: photo,
             year: "1999",
-            madeby: "artist3"
+            madeby: "artist3",
+            grade:star42
           },
           // {
           //   path: "",
@@ -81,7 +96,8 @@ const AlbumsPage = () => {
           //   category: "Rock",
           //   photo: photo,
           //   year: "2020",
-          //   madeby: "artist4"
+          //   madeby: "artist4",
+          //  grade:star42
           // },
       ]
 
@@ -108,9 +124,14 @@ const AlbumsPage = () => {
               <div class="card-row3">
               {cardArray.map(card => (
             <Link to="../temp/album-temp" className="card3">
+            
             <div class="card-header3">
                   <h1>{card.title}</h1>
             </div>
+            <div class="imgHolder">
+              <img src={card.grade} alt="nista" class="star"></img>
+            </div>
+
 
             <div class="card-body3">
               <img class="picture3" src={card.photo} alt="Italian Trulli"></img>
