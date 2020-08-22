@@ -2,8 +2,9 @@ import React from 'react'
 import { Link } from "gatsby"
 import SEO from "../components/seo"
 import './artistsStyle.css'
-import logo from "../images/metallica.jpg"
-import photo from "../images/gatsby-icon.png"
+import logo1 from "../images/metallica.jpg"
+import logo2 from "../images/ironmaiden.jpg"
+import logo3 from "../images/megadeth.jpg"
 import Layout from '../components/layout'
 
 
@@ -15,56 +16,56 @@ const ArtistsPage = () => {
           path: "",
           title: "Metallica",
           text: "James Hetfield, Lars Ulrich, Kirk Hammett, Robert Trujillo",
-          photo: logo,
+          photo: logo1,
         },
         {
           path: "",
           title: "artist2",
-          text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-          photo: logo,
+          text: "imeprezimeclan1, imeclan2, imeprezime3, imeclan4",
+          photo: logo2,
         },
         {
           path: "",
           title: "artist3",
-          text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-          photo: logo,
+          text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
+          photo: logo3,
         },
         {
             path: "",
             title: "artist4",
-            text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-            photo: logo,
+            text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
+            photo: logo2,
           },
           {
             path: "",
             title: "artist5",
-            text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-            photo: logo,
+            text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
+            photo: logo3,
           },
           {
             path: "",
             title: "artist6",
-            text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-            photo: logo,
+            text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
+            photo: logo1,
           },
           {
             path: "",
             title: "artist7",
-            text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-            photo: logo,
+            text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
+            photo: logo3,
           },
-          {
-            path: "",
-            title: "artist8",
-            text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-            photo: logo,
-          },
-          {
-            path: "",
-            title: "artist9",
-            text: "imeprezimeclan1, imeclan2, imeclan3, imeclan4",
-            photo: logo,
-          },
+          // {
+          //   path: "",
+          //   title: "artist8",
+          //   text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
+          //   photo: logo1,
+          // },
+          // {
+          //   path: "",
+          //   title: "artist9",
+          //   text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
+          //   photo: logo2,
+          // },
       ]
 
     return (

@@ -29,6 +29,7 @@
      color: white;
      text-transform: uppercase;
      font-weight: 500;
+     margin-bottom: 30px;
  }
 
  .box input[type="text"], .box input[type="password"]{

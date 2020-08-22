@@ -34,6 +34,7 @@ const ArtistPage = () => {
             </div>
 
             <div class="artistTekst">
+                <p class="members">Members: James Hetfield, Lars Ulrich, Kirk Hammett, Robert Trujillo</p>
                 <p>
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                 Morbi enim nunc faucibus a pellentesque sit. Sit amet consectetur adipiscing elit duis tristique sollicitudin nibh. 

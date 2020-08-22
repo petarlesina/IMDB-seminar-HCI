@@ -190,8 +190,8 @@
 
 @media only screen and (max-width: 650px) {
     .albumContainer{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
     }
     
     .albumPjesme{
@@ -199,7 +199,7 @@
     }
 
     .albumBackButton{        
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .albumHead{

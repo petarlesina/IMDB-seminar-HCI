@@ -8,7 +8,7 @@ $blue: #1686d9;
 
 
 .title {
-    margin: 2rem 14rem;
+    margin: 2rem 17.5rem;
 }
 
 
@@ -19,7 +19,7 @@ $blue: #1686d9;
 }
 
 .singlePost{
-    margin: 2rem 14rem;
+    margin: 2rem 17.5rem;
     
     a {
         //background-color: #ffcccc;
@@ -79,7 +79,8 @@ $blue: #1686d9;
 	border-radius: 30px;
 	text-decoration: none;
 	padding: 10px 28px;
-	color: black;
+    color: black;
+   
 	
 	display: inline-block;
 	&:hover {
@@ -88,6 +89,7 @@ $blue: #1686d9;
 		border: 1px solid #ffcccc;
 	}
 }
+
 
 .popupButtonsContainer{
     margin-top: 4.5rem;
@@ -138,7 +140,7 @@ $blue: #1686d9;
 
 
 .buttonPopUp{
-    margin: 2rem 14rem 0.1rem;
+    margin: 2rem 17.5rem 0.1rem;
 }
 
 // .buttonSubmitPopUp{
@@ -184,7 +186,7 @@ $blue: #1686d9;
 }
 
 
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 1224px) {
     .title{
         margin: 3rem;
     }
@@ -275,15 +277,15 @@ $blue: #1686d9;
 
   }
 
-  @media only screen and (max-width: 340px) {
+  @media only screen and (max-width: 370px) {
     .title{
         margin: 1.5rem;
     }
     .singlePost {
-        margin: 0.4rem 1.5rem;
+        margin: 2rem 1.5rem;
     }
     .buttonPopUp{
-        margin: 0rem 1.5rem;
+        margin: 1rem 1.5rem;
     }
     
     .modalContents {

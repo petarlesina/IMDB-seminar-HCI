@@ -8,7 +8,7 @@ import { useEffect } from "react"
 
 
 function ok(){
-    document.getElementById('tonyButton').addEventListener("click", function() {
+    document.getElementById('buttonPopUp').addEventListener("click", function() {
         document.querySelector("#popupModal").style.display = "flex";
     });
  
@@ -63,7 +63,7 @@ const BlogPage = () => {
             <SEO title="Blog" keywords="Blog" />
             <div className={blogStyles.mainContainer}>
             <h1 className={blogStyles.title}>Blog</h1>
-            <a href="#" id="tonyButton" className={blogStyles.buttonPopUp}>+ Add new post</a>
+            <a href="#" id="buttonPopUp" className={blogStyles.buttonPopUp}>+ Add new post</a>
             <ol className={blogStyles.posts}>
 
                 {data.allMarkdownRemark.edges.map((edge) =>{
