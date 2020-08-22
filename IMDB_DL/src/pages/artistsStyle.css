@@ -3,7 +3,7 @@
 }
 
 .card-container2{
-    width:85%;
+    width:100%;
     margin: 70px auto;
     
 }
@@ -11,6 +11,7 @@
 .heading2{
     font-size: 30px;
     margin: 3rem;
+    margin-left: 22.5%;
 }
 
 .card-row2{
@@ -24,15 +25,16 @@
 }
 
 .card2{
-    width: 70%;
+    width: 55%;
     background: #fff;
     /* border: 1px solid red; */
     margin-bottom: 50px;
-    margin-left: 2rem;
+    padding-bottom: none;
+    
     transition: 0.3s;
     text-decoration: none;
     border: 2px solid black; 
-    border-radius: 25px;
+    /* border-radius: 25px; */
 }
 
 .card-header2{
@@ -44,56 +46,78 @@
     /* border: 2px solid #468847; */
     border-bottom: none;
     /* padding-bottom: 1px; */
-    border-radius: 21px 21px 0 0;
+    /* border-radius: 21px 21px 0 0; */
+}
+
+.artistTitleHeader{
+    text-decoration: none;
+    color: black;
+    font-weight: 400;
+    margin-left: 10px;
+    
+    /* padding-bottom: 10px; */
 }
 
 .card-body2{
-    padding: 20px;
-    text-align: left;
+    padding: 10px;
+    padding-bottom: 0px;
+    margin-bottom: 0px;
+    text-align: right;
     font-size: 18px;
-
-    border-radius: 0 0 25px 25px;
+    
+    display: flex;
+    justify-content: flex-end;
 }
 
-.picture{
-    border-radius: 50%;
-    width: 120px;
+.card-body2 img{
+    margin-bottom: 10px;
+}
+
+.card-body2 p{
+    margin-bottom: 10px;
+}
+
+.picture2{
+    /* border-radius: 50%; */
+    width: 220px;
     min-height: 120px;
     max-height: auto;
     height: auto;
     display: block;
-  margin-left: auto;
-  margin-right: auto;
+    margin-right: auto;
 }
 
 
 .card2:hover{
-    transform: scale(1.15);
-    box-shadow: 0 0 40px -10px rgba(0, 0, 0, 0.25);
+    transform: scale(1.1);
     text-decoration: none;
 }
 
 
-.tekst-kartice{
-    font-weight: 600; 
+.tekst-kartice2{
+    width: 28%;
+    margin-top:4rem;
+    font-size: 20px;
+    background: none;
+    font-weight: 500; 
+    color: black;
     text-decoration: none;
     
 }
-.tekst-kartice:link{
-color: red;
-}
 
 
 
-.searchWrapper{
-    margin: 10px auto;
-    margin-left: 1rem;
-    padding: 10px 30px;
+
+.searchWrapper2{
+    /* margin: 10px auto; */
+    margin-top: 5rem;
+    margin-left: 22.5%;
+    /* padding: 10px 30px; */
     transform: translate(0%, -20%);
     border-radius: 50px;
 }
 
-.searchBar {
+.searchBar2 {
     width: 300px;
     height: 40px;
     border-radius: 50px;
@@ -103,12 +127,12 @@ color: red;
     font-size: 17px;
 }
 
-.searchWrapper::after {
+.searchWrapper2::after {
     content: '🔍';
     right: 15px;
 }
 
-.searchBar:focus{
+.searchBar2:focus{
      width: 380px; 
     border-color: #9bca9b;
     outline: none;
@@ -116,130 +140,98 @@ color: red;
     
 }
 
-@media only screen and (max-width: 1272px){
 
-    .card-container2{
-        width:95%;
-        margin: 0.8rem;
-    }
 
-    .card-row2{
-        justify-content: space-evenly;
-    }
+@media only screen and (max-width: 926px){
 
     .card2{
-        width: 30%;
-        margin-left: 1rem;
+        width: 75%;
     }
+
+    .searchWrapper2{
+        
+        margin-left: 12.5%;
+    }
+    
 
     .heading2{
-        margin-left: 3rem;
-    }
-
-     .searchBar{
-        width: 400px;
-    } 
-
-    .searchBar:focus{
-        width: 440px;
+        margin-left: 12.5%;
     }
 
 }
 
-@media only screen and (max-width: 1010px) {
-    .card-container2{
-        width:90%;
-        margin-left:5.4rem;
-        margin-right: 1rem;
-    }
-    .heading2{
-        margin-bottom: 0.5rem;
-    }
+
+@media only screen and (max-width: 666px){
+
     .card2{
-        width:40%;
+        width: 90%;
+        margin-right: 0;
+        padding-right: 0;
+    }
+
+    .card2:hover{
+        transform: scale(1.05);
+        text-decoration: none;
+    }
+    
+    .searchWrapper2{
+        margin-left: 5%;
         
     }
 
-    .card-row2{
-        justify-content: left;
+    .heading2{
+        margin-left: 5%;
     }
 
-     /* .searchBar{
-        margin-right: 2rem;
-    }  */
+    .card-body2{
+        display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    }
 
+    .picture2{
+        /* width: 100%; */
+    }
+
+    .tekst-kartice2{
+        margin-top: 4.5rem;
+        width: 50%;
+    }
     
 }
 
-@media only screen and (max-width: 966px) {
-    .card-container2{
-        margin-left:4.4rem;
-        margin-right: 2rem;
+@media only screen and (max-width: 595px){
 
+    .tekst-kartice2{
+        margin-top: 4rem;
     }
+
 }
 
-@media only screen and (max-width: 786px){
-    .card-container2{
-        width:80%;
-        margin-left: 6rem;
-        margin-right: 6rem;
-    }
-    .card2{
-        width:40%;
-    }
+@media only screen and (max-width: 515px){
 
-    
-
-    .searchWrapper{
+    .picture2{
         width: 100%;
-    } 
+    }
 
-    .searchBar{
+    .tekst-kartice2{
+        margin-top: 1rem;
+        width: 100%;
+        font-size: 17px;
+    }
+
+}
+
+@media only screen and (max-width: 400px){
+
+    .searchBar2{
         width: 70%;
     }
 
-    .searchBar:focus {
+    .searchBar2:focus{
         width: 80%;
     }
 
-    .heading2{
-        margin-left: 3rem;
-        margin-bottom: 0rem;
-    }
-}
 
-
-@media only screen and (max-width: 570px){
-
-    .card-container2{
-        width:90%;
-        margin: 0.8rem;
-    }
-    .card2{
-        width:70%;
-        height: 330px;
-    }
-
-    .card-row2{
-        justify-content: space-evenly;
-    }
-
-    .searchWrapper{
-        width: 100%;
-    }
-
-    .searchBar{
-        width: 90%;
-    }
-
-    .searchBar:focus {
-        width: 90%;
-    }
-
-    .heading2{
-        /* padding:10px; */
-        margin: 3.5rem;
-        margin-bottom: 0rem;
-    }
 }
