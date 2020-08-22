@@ -27,7 +27,7 @@ const AlbumsPage = () => {
             <div class="albumInfo">
                 <ul class="infoNiz">
                 <li>Released March 03, 1986 </li>
-                <li>Trash metal </li>
+                <li>Thrash metal </li>
                 <li>Made by <Link className="albumToArtistlink" to="../artist-temp">Metallica</Link></li>
                 </ul>
             </div>

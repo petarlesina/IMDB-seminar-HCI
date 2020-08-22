@@ -31,7 +31,7 @@ const Footer =() => {
 
           <div className={footerStyles.container}>
             <div className={footerStyles.leftColumn}>
-            <h5 className={footerStyles.title}>
+            <h5 className={footerStyles.title} color="#ffffff">
             Find us on social media
              </h5>
               <div className={footerStyles.socialMedia}>
@@ -76,7 +76,7 @@ const Footer =() => {
 
             <div className={footerStyles.rightColumn}>
 
-            <h1>Our newsletter</h1>
+            <h1 >Our newsletter</h1>
             <div className={footerStyles.border}></div>
               <h3>Enter your email to get our news</h3>
               <form action="" className={footerStyles.newsletter}>

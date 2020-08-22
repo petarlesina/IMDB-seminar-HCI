@@ -40,7 +40,12 @@
 .card-header{
     text-align: center;
     padding: 50px 10px;
-    background: #68b169;
+
+
+    /* background: #68b169; */
+    background: #E76F51;
+
+
     color: black;
     /* border: 2px solid black; */
     border-bottom: none;
@@ -67,17 +72,17 @@
 
 .card-body .btn{
     display:block;
-    color:#468847;
+    color:#E76F51;
     text-align: center;
     background: white;
-     border: 1px solid #468847;
+     border: 1px solid #E76F51;
     margin-top: 30px;
     text-decoration: none;
     padding: 10px 5px;
 }
 
 .card-body .btn:hover{
-    background: #468847;
+    background: #E76F51;
     color: white;
 }
 

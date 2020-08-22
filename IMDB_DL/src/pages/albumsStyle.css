@@ -61,7 +61,7 @@
 .card-header3{
     text-align: left;
     padding-left: 5%;
-    background:  #468847;
+    background:  #F4A261;
     color: #1f4261;
     border-bottom: none;
     /* padding-bottom: 1px; */
@@ -117,12 +117,12 @@
 .link-artist{
     font-size: 28px;
     font-weight: 650; 
-    color: #468847;
+    color: #F4A261;
     text-decoration: none;
 }
 
 .link-artist:hover{
-    color: #abd4ac;
+    color: #fad5b7;
 }
 
 .searchWrapper3{
@@ -138,7 +138,7 @@
     width: 300px;
     height: 40px;
     border-radius: 50px;
-    border: 2px solid #eaeaea;
+    border: 3px solid #eaeaea;
     padding: 0px 10px;
     /* padding: 1rem 0.5rem; */
     font-size: 17px;
@@ -151,7 +151,7 @@
 
 .searchBar3:focus{
      width: 380px; 
-    border-color: #9bca9b;
+    border-color: #E76F51;
     outline: none;
      transition: 0.25s;
     

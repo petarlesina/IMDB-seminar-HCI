@@ -23,7 +23,7 @@ $blue: #1686d9;
     
     a {
         //background-color: #ffcccc;
-        background-color: #ffb3b3;
+        background-color: #F4A261;
         color: black;
         display: block;
         padding: 1rem;
@@ -34,7 +34,7 @@ $blue: #1686d9;
     }
 
     a:hover {
-        background: #ff6666;
+        background: #fad5b7;
     }
 
     h3{
@@ -65,7 +65,7 @@ $blue: #1686d9;
 .modalContents {
 	height: 400px;
 	width: 600px;
-	background-color: #f2e6ff;
+	background-color: #E9C46A;
 	text-align: center;
 	padding: 10px;
 	position: relative;
@@ -74,7 +74,7 @@ $blue: #1686d9;
  
 
 .buttonPopUp{
-	background-color: #ffcccc;
+	background-color: #F4A261;
 	border: 1px solid black;
 	border-radius: 30px;
 	text-decoration: none;
@@ -84,9 +84,9 @@ $blue: #1686d9;
 	
 	display: inline-block;
 	&:hover {
-		background: #ff6666;
-		color: #ffcccc;
-		border: 1px solid #ffcccc;
+		background: #fad5b7;
+		// color: #ffcccc;
+		// border: 1px solid #ffcccc;
 	}
 }
 
@@ -102,7 +102,7 @@ $blue: #1686d9;
 }
 
 .buttonCancelPopUp{
-    background-color: #ffb3b3;
+    background-color: #ffcccc;
 	// border: 1px solid #e62e00;
 	border-radius: 30px;
 	text-decoration: none;
@@ -113,7 +113,7 @@ $blue: #1686d9;
 	display: inline-block;
 	&:hover {
 		background: #e62e00;
-		color: #ffcccc;
+		color: white;
 		// border: solid #ffcccc;
 	}
 }
@@ -130,7 +130,7 @@ $blue: #1686d9;
 	&:hover {
 		background: #009933;
         // border: 1px solid #009933;
-		color: #ffcccc;
+		color: white;
 		
 	}
 
@@ -179,7 +179,7 @@ $blue: #1686d9;
 }
 
 .inputTitle:focus, .inputText:focus{
-    border: 2px solid #468847;
+    border: 2px solid #E76F51;
     width: 73%;
     outline: none;
     transition: 0.25s;

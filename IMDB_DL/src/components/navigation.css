@@ -1,7 +1,8 @@
 
 
 nav{
-    background: black;
+    /* background: black; */
+    background: #264653;
     padding: 10px 40px 0 40px;
 }
 
@@ -52,21 +53,22 @@ nav ul li.logo{
 }
 
 nav ul li a{
-    color:white;
+    color:#E9C46A;
     font-size: 22px;
     text-decoration: none;
-    transition: 0.2s;
+    /* transition: 0.2s; */
     outline: none;
 }
 
 .navButton:hover{
-    color: cyan;
+    /* color: cyan; */
+    color: #fcf7e9;
     cursor: pointer;
 }
 
 
 .activeButton{
-    color:#4da6ff;
+    color:#E76F51;
     text-decoration: underline;
     text-underline-offset: 0.35rem;
 }

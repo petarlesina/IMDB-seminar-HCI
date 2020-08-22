@@ -2,7 +2,7 @@
 .blog-site{
     display: flex;
     flex-direction: column;
-    background: #ffb3b3;
+    background: #F4A261;
     text-align: left;
     padding: 20px;
     width: 45%;
@@ -15,7 +15,7 @@
 }
 
 .head-post{
-    background: #ff8080;
+    background: #E76F51;
     padding-top: 1.5rem;
     text-align: center;
     font-size: 30px;
@@ -28,7 +28,7 @@
     display:block;
     color:white;
     text-align: center;
-    background: green;
+    background: #E76F51;
     position: relative;
     bottom: 160px;
     margin-left: 29%;

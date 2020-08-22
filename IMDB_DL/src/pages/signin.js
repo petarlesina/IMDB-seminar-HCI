@@ -13,7 +13,7 @@ const SignInPage = () => {
                 <h1>Login</h1>
                 <input type="text" name="" placeholder="Username"></input>
                 <input type="password" name="" placeholder="Password"></input>
-                <input type="submit" name="" value="Log in" onClick=""></input>
+                <input type="button" name="" value="Log in"></input>
 
             </form>
             </Layout>

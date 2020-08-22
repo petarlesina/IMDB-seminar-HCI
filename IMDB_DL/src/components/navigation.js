@@ -38,7 +38,7 @@ const Navigation = ({menuItems}) => {
        
        <input type="checkbox" id="chk" value="unchecked"></input>
        {/* <label for="chk" class="showMenuBtn"><FaEllipsisH size="1.4rem"/></label> */}
-       <label for="chk" class="showMenuBtn"><FaChevronDown size="1.4rem"/></label>
+       <label for="chk" class="showMenuBtn" ><FaChevronDown size="1.4rem" color="#E9C46A"/></label>
         
             {menuItems.map(({ link, text}) => (
                 <li id="oneItem" class="items" key={text}>
@@ -46,7 +46,7 @@ const Navigation = ({menuItems}) => {
                 </li>    
             ))}
         
-        <label for="chk" class="hideMenuBtn"><FaChevronUp size="1.4rem"/></label>
+        <label for="chk" class="hideMenuBtn"><FaChevronUp size="1.4rem" color="#E9C46A"/></label>
         {/* <li id="ham" class="ham"><FaBars size="1.4rem"/> </li> */}
         </ul>
 

@@ -14,7 +14,8 @@
      /* transform: translate(-50%, -50%); */
      display: flex;
      flex-direction: column;
-     background: rgba(0,0,0, 0.3);
+     /* background: rgba(0,0,0, 0.3); */
+     background: #264653;
      
      text-align: center;
      padding: 20px;
@@ -29,7 +30,6 @@
      color: white;
      text-transform: uppercase;
      font-weight: 500;
-     margin-bottom: 30px;
  }
 
  .box input[type="text"], .box input[type="password"]{
@@ -54,25 +54,25 @@
 
 }
 
-.box input[type="submit"]{
+.box input[type="button"]{
      border:0;
-     background: #89c28a;
+     background: #80ffaa;
      display:block;
      margin: 20px auto;
      text-align: center;
-     border: 2px solid #89c28a;
+     /* border: 2px solid #80ffaa; */
      padding: 14px 40px;
      outline: none;
-     color: white;
+     color: black;
      font-weight: 900;
      border-radius: 24px;
-     transition: 0.15s;
+     /* transition: 0.15s; */
      cursor: pointer;
 }
 
-.box input[type="submit"]:hover{
-    background: #468847;
-    border: 2px solid #468847;
+.box input[type="button"]:hover{
+    background: #009933;
+    /* border: 2px solid #009933; */
 }
 
 
