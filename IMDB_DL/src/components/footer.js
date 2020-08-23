@@ -96,7 +96,7 @@ const Footer =() => {
 
 
           <p className={footerStyles.copyright}>
-              Napravili {data.site.siteMetadata.author}
+              Made by {data.site.siteMetadata.author}
             </p>
 
 

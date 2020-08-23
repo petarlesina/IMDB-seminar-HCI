@@ -30,8 +30,10 @@
      color: white;
      text-transform: uppercase;
      font-weight: 500;
+     margin-bottom: 40px;
  }
 
+ 
  .box input[type="text"], .box input[type="password"]{
      border:0;
      background: none;

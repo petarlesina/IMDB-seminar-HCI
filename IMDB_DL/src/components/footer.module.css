@@ -75,7 +75,7 @@
     font-size: 15px;
     color: #293043;
     background: #ddd;
-    border: 1px solid  #264653;
+    border: 2px solid  #264653;
     font-weight: 700;
     outline: none;
     border-radius: 24px;
@@ -84,8 +84,8 @@
 
   .txtb:focus{
     border: 2px solid #E76F51;
-    transition: 0.15s;
-    transform: scale(1.05);
+    /* transition: 0.15s;
+    transform: scale(1.05); */
   }
 
   .sub{

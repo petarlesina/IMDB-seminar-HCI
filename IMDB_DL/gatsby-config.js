@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: `IMDB`,
     description: `Welcome to Internet Music Database website! Discover new music or rediscover old hits with one mouse click!`,
-    author: `Lešina Petar i Delonga Sinjski dijamant`,
+    author: `Lešina Petar & Delonga Bruno`,
 
     menuItems : [
       {
