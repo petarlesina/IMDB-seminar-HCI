@@ -60,6 +60,7 @@
 .linkNaAlbum{
     text-decoration: none;
     color:  #2A9D8F;
+    font-weight: 680;
 }
 
 .linkNaAlbum:hover{
@@ -187,8 +188,8 @@
 
 @media only screen and (max-width: 650px) {
     .artistContainer{
-        width: 80%;
-        margin-left: 10%;
+        width: 90%;
+        margin-left: 5%;
     }
     
     .artistAlbumi{
@@ -196,7 +197,7 @@
     }
 
     .albumBackButton{        
-        margin-left: 10%;
+        margin-left: 5%;
     }
 
     .artistHead{

@@ -66,6 +66,7 @@
 .albumLink{
     text-decoration: none;
     color:  #2A9D8F;
+    font-weight: 680;
 }
 
 .albumLink:hover, .albumToArtistlink:hover{
@@ -75,6 +76,7 @@
 .albumToArtistlink{
     text-decoration: none;
     color:  #2A9D8F;
+    font-weight: 680;
 }
 
 
