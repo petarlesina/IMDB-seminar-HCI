@@ -4,6 +4,7 @@ import SEO from "../../components/seo"
 import Layout from "../../components/layout"
 import "./albumTempStyle.css"
 import albumLogo from "../../images/masterofpuppets.jpg"
+import star42 from "../../images/star422.png"
 
 const AlbumsPage = () => {
 
@@ -17,6 +18,10 @@ const AlbumsPage = () => {
 
             <div class="albumHead">
             <h1 class="albumTitle">Master of Puppets</h1>
+            </div>
+
+            <div class="gradeWrapper">
+                <img src={star42} alt="nista" class="star"></img>
             </div>
 
             <div class="albumLogo">
@@ -102,6 +107,9 @@ const AlbumsPage = () => {
 
             </div>
 
+            <div class="cancelGradeWrapper">
+            <input type="button" name="" value="Delete grade" class="cancelGrade"></input>
+            </div>
 
             </div>
 

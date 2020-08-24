@@ -23,8 +23,14 @@
     
 }
 
+.gradeWrapper{
+    display: flex;
+    justify-content: end;
+    margin: 0;
+}
+
 .albumLogo{
-    margin-top: 2rem;
+    margin-top: 0;
     display: flex;
     justify-content: center;
 }
@@ -139,7 +145,30 @@
 
 
 
+.cancelGradeWrapper{
+    display: flex;
+    justify-content: center;
+}
 
+.cancelGrade{
+    display:block;
+    color:white;
+    text-align: center;
+    background: #ffcccc;
+    margin-top: 25px;
+    text-decoration: none;
+    padding: 5px 1px;
+    width: 130px;
+    border: 1px solid black;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.cancelGrade:hover{
+    transform: scale(1.1);
+    transition: 0.15s;
+    background: #e62e00;;
+}
 
 
 .albumBackButton{
