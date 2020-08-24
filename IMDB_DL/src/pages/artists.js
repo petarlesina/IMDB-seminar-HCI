@@ -48,24 +48,7 @@ const ArtistsPage = () => {
             text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
             photo: logo1,
           },
-          {
-            path: "",
-            title: "artist7",
-            text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
-            photo: logo3,
-          },
-          // {
-          //   path: "",
-          //   title: "artist8",
-          //   text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
-          //   photo: logo1,
-          // },
-          // {
-          //   path: "",
-          //   title: "artist9",
-          //   text: "imeprezime1, imeclan2, imeprezime3, imeclan4",
-          //   photo: logo2,
-          // },
+          
       ]
 
     return (
