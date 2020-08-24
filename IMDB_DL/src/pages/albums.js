@@ -6,7 +6,7 @@ import logo from "../images/logo.png"
 import star48 from "../images/star48.jpg"
 import star39 from "../images/star39.jpg"
 import star42 from "../images/star42.jpg"
-import star from "../images/star.jpg"
+
 
 
 

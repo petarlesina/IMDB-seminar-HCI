@@ -2,7 +2,7 @@ import React from 'react'
 import { graphql, Link } from 'gatsby'
 
 import Layout from '../components/layout'
-import style from '../templates/template-blog.css'
+
 export const query = graphql` query (
     $slug: String!
   ){

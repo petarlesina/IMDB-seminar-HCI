@@ -1,6 +1,6 @@
 import React from 'react'
-import { Link, graphql, useStaticQuery } from 'gatsby'
-import logo from "../images/logo.png"
+import { graphql, useStaticQuery } from 'gatsby'
+
 
 import footerStyles from './footer.module.css'
 
