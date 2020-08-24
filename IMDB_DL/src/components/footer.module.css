@@ -83,7 +83,7 @@
   }
 
   .txtb:focus{
-    border: 2px solid #E76F51;
+    border: 2px solid #e0451f;
     /* transition: 0.15s;
     transform: scale(1.05); */
   }
