@@ -1,7 +1,8 @@
 import React from "react"
 import { Link, graphql, useStaticQuery } from 'gatsby'
 import "./navigation.css"
-
+// import logo from "../images/logo.png"
+// import imdblogo from "../images/imdblogo.png"
 import { FaChevronDown } from "react-icons/fa";
 import { FaChevronUp } from "react-icons/fa";
 

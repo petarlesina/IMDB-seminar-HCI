@@ -21,7 +21,7 @@
 //           fluid(maxWidth: 300) {
 //             ...GatsbyImageSharpFluid
 //           }
-        
+//         }
 //       }
 //     }
 //   `)
