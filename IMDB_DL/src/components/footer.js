@@ -81,7 +81,7 @@ const Footer =() => {
               <h3>Enter your email to get our news</h3>
               <form action="" className={footerStyles.newsletter}>
                 <input type="text" class={footerStyles.txtb} placeholder="Enter your email"></input>
-                <input type="submit" class={footerStyles.sub} value="Submit"></input>
+                <input type="button" class={footerStyles.sub} value="Submit"></input>
                   
                 
               </form>
